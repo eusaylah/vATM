@@ -52,6 +52,8 @@
 
 
 % ----- Figure setup ----- %
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
 \renewcommand\thefigure{\arabic{section}-\arabic{figure}}
 
 
@@ -66,6 +68,7 @@
 %\setlength{\cftsubsecindent}{0pt}
 \setlength{\cftsecnumwidth}{2.25cm}
 %\setlength{\cftbeforesubsecskip}{5cm}
+
 
 % ----- Header and footer setup ----- %
 \fancyhf{}
@@ -82,3 +85,12 @@
 
 \pagestyle{fancy}
 
+
+% ----- Commands ----- %
+\newcommand{\note}[2][\empty]{%
+	\ifx#1\empty
+		\textit{Note --- #2}%
+	\else
+		\textit{Note #1 --- #2}%
+	\fi
+}
