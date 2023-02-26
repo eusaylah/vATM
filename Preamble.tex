@@ -88,9 +88,32 @@
 
 % ----- Commands ----- %
 \newcommand{\note}[2][\empty]{%
-	\ifx#1\empty
+	\ifx#1\empty%
 		\textit{Note --- #2}%
-	\else
+	\else%
 		\textit{Note #1 --- #2}%
+	\fi%
+}%
+
+\newcommand{\checkspace}{%
+	\ifdim\dimexpr\pagegoal-\pagetotal>1.3cm
+	1
+	\else
+	0
 	\fi
 }
+
+\newcommand{\chapterend}{%
+	\ifnum\checkspace=1
+	\vspace*{1cm}
+	\else
+	\vfill
+	\fi
+	\begin{center}
+		--------------------------------------------------%
+	\end{center}
+	\newpage
+}
+
+
+
