@@ -217,8 +217,96 @@
     \end{enumeratesc}
 
     \subsection[General procedures]{GENERAL PROCEDURES}
+    
+    %Numbering
+    % 8.6.1
 
-    \subsubsection{Performance checks}
+    \subsubsection{Identification of aircraft}
+    
+    \begin{enumeratesc}
+    	\item \textsc{Establishment of identification}
+    	\begin{enumerate}
+    		\item Before providing an ATS surveillance service to an aircraft, identification shall be established and the pilot informed. Thereafter, identification shall be maintained until termination of the ATS surveillance service.
+    		\item If identification is subsequently lost, the pilot shall be informed accordingly and, when applicable, appropriate instructions issued.
+    		%References
+    		\item Identification shall be established by at least one of the methods specified in 8.6.2.2, 8.6.2.3, 8.6.2.4 and 8.6.2.5.
+    	\end{enumerate}
+    
+    	\item \textsc{ADS-B identification procedures}
+    	\begin{enumempty}
+    		\item Where ADS-B is used for identification, aircraft may be identified by one or more of the following procedures:
+    	\end{enumempty}
+    	\begin{enumalph}
+    		\item direct recognition of the aircraft identification in an ADS-B label;
+    		%References
+    		\item transfer of ADS-B identification (see 8.6.3); and
+    		\item observation of compliance with an instruction to TRANSMIT ADS-B IDENT.
+    		\note[1]{Some aircraft equipped with first generation ADS-B avionics do not have the capability of squawking IDENT while the emergency and/or urgency mode is selected.}
+    		\note[2]{In automated systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
+    	\end{enumalph}
+    	
+    	\item \textsc{SSR and/or MLAT identification procedures}
+    	\begin{enumerate}
+    		\item Where SSR and/or MLAT is used for identification, aircraft may be identified by one or more of the following procedures:
+    		
+    		\begin{enumalph}
+    			\item recognition of the aircraft identification in an SSR and/or MLAT label;
+    			%References
+    			\note{The use of this procedure requires that the code/call sign correlation is achieved successfully, taking into account the Note following b) below.}
+    			\item recognition of an assigned discrete code, the setting of which has been verified, in an SSR and/or MLAT label;
+    			%References
+    			\note{The use of this procedure requires a system of code assignment which ensures that each aircraft in a given portion of airspace is assigned a discrete code (see 8.5.2.2.7).}
+    			\item direct recognition of the aircraft identification of a Mode S-equipped aircraft in an SSR and/or MLAT label;
+    			\note{The aircraft identification feature available in Mode S transponders provides the means to identify directly individual aircraft on situation displays and thus offers the potential to eliminate ultimately the recourse to Mode A discrete codes for individual identification. This elimination will only be achieved in a progressive manner depending on the state of deployment of suitable ground and airborne installations.}
+    			%References
+    			\item by transfer of identification (see 8.6.3);
+    			\item observation of compliance with an instruction to set a specific code;
+    			\item observation of compliance with an instruction to squawk IDENT.
+    			\note[1]{In automated radar systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
+    			\note[2]{Garbling of transponder replies may produce “IDENT”-type of indications. Nearly simultaneous “IDENT” transmissions within the same area may give rise to errors in identification.}
+    		\end{enumalph}
+    		
+    		\item When a discrete code has been assigned to an aircraft, a check shall be made at the earliest opportunity to ensure that the code set by the pilot is identical to that assigned for the flight. Only after this check has been made shall the discrete code be used as a basis for identification.
+    	\end{enumerate}
+    
+    	\item \textsc{PSR identification procedures}
+    	\begin{enumerate}
+    		\item Where PSR is used for identification, aircraft may be identified by one or more of the following procedures:
+    		
+    		\begin{enumalph}
+    			\item by correlating a particular radar position indication with an aircraft reporting its position over, or as bearing and distance from, a point shown on the situation display, and by ascertaining that the track of the particular radar position is consistent with the aircraft path or reported heading;
+    			\note[1]{Caution must be exercised when employing this method since a position reported in relation to a point may not coincide precisely with the radar position indication of the aircraft on the situation display. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.: \begin{enumerate}[label=\roman*),leftmargin=*,labelsep=0pt,labelindent=0pt] \item a level or levels above which this method may not be applied in respect of specified navigation aids; or \item a distance from the radar site beyond which this method may not be applied. \end{enumerate}}
+    			\note[2]{The term “a point” refers to a geographical point suitable for the purposes of identification. It is normally a reporting point defined by reference to a radio navigation aid or aids.}
+    			\item by correlating an observed radar position indication with an aircraft which is known to have just departed, provided that the identification is established within 1 NM from the end of the runway used. Particular care should be taken to avoid confusion with aircraft holding over or overflying the aerodrome, or with aircraft departing from or making a missed approach over adjacent runways;
+    			%References
+    			\item by transfer of identification (see 8.6.3);
+    			\item by ascertaining the aircraft heading, if circumstances require, and following a period of track observation:
+    			
+    			\begin{enumerate}[label=---,labelsep=0.3cm,leftmargin=*,labelindent=0pt]
+    				\item instructing the pilot to execute one or more changes of heading of 30 degrees or more and correlating the movements of one particular radar position indication with the aircraft’s acknowledged execution of the instructions given; or
+    				\item correlating the movements of a particular radar position indication with manoeuvres currently executed by an aircraft having so reported.
+    			\end{enumerate}
+    			
+    			\noindent When using these methods, the controller shall:
+    			
+    			\begin{enumerate}[label=\roman*),labelsep=0pt,leftmargin=*,labelindent=0pt]
+    				\item verify that the movements of not more than one radar position indication correspond with those of the aircraft; and
+    				\item ensure that the manoeuvre(s) will not carry the aircraft outside the coverage of the radar or the situation display.
+    			\end{enumerate}
+    		
+    			\note[1]{Caution must be exercised when employing these methods in areas where route changes normally take place.}
+    			%References
+    			\note[2]{With reference to ii) above, see also 8.6.5.1 regarding vectoring of controlled aircraft.}
+    		\end{enumalph}
+    	
+    		\item Use may be made of direction-finding bearings to assist in identification of an aircraft. This method, however, shall not be used as the sole means of establishing identification, unless so prescribed by the appropriate ATS authority for particular cases under specified conditions.
+    	\end{enumerate}
+    
+    	\item \textsc{Additional identification method}
+    	\begin{enumempty}
+    		\item When two or more position indications are observed in close proximity, or are observed to be making similar movements at the same time, or when doubt exists as to the identity of a position indication for any other reason, changes of heading should be prescribed or repeated as many times as necessary, or additional methods of identification should be employed, until all risk of error in identification is eliminated.
+    	\end{enumempty}    
+    \end{enumeratesc}
 
 
 
