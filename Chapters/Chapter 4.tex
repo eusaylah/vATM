@@ -66,7 +66,7 @@
             
             \noindent as specified in letters of agreement or ATS unit instructions.
             
-            \item \label{4.3.2.1.2} Transfer of communications to the aerodrome controller should be effected at such a point, level or time that clearance to land or alternative instructions, as well as information on essential local traffic, can be issued in a timely manner. \par
+            \item \label{4.3.2.1.2} Transfer of communications to the aerodrome controller should be effected at such a point, level or time that clearance to land or alternative instructions, as well as information on essential local traffic, can be issued in a timely manner.
             \note{Even though there is an approach control unit, control of certain flights may be transferred directly from an ACC to an aerodrome control tower and vice versa, by prior arrangement between the units concerned for the relevant part of approach control service to be provided by the ACC or the aerodrome control tower, as applicable.} 
             
             \item \textit{Departing aircraft.} Control of a departing aircraft shall be transferred from the unit providing aerodrome control service to the unit providing approach control service:
@@ -140,15 +140,15 @@
 
     \begin{enumeratesc}
         \item \textsc{Prior to departure}
-        \begin{enumempty}
-            \item Flight plans shall not be submitted more than 2 hours before the estimated off-block time of a flight.
+        \begin{enumempty}[labelindent=\parindent]
+            %VATSIM
+            \item \note{On VATSIM, flight plans may be submitted 2 hours before the flight.}
         \end{enumempty}
 
         \item \textsc{During flight}
         \begin{enumerate}
             \item A flight plan to be submitted during flight should normally be transmitted to the ATS unit in charge of the FIR, control area, advisory area or advisory route in or on which the aircraft is flying, or in or through which the aircraft wishes to fly or to the aeronautical telecommunication station serving the air traffic services unit concerned. When this is not practicable, it should be transmitted to another ATS unit or aeronautical telecommunication station for retransmission as required to the appropriate air traffic services unit.
             \item Where relevant, such as in respect of ATC units serving high- or medium-density airspace, the appropriate ATS authority should prescribe conditions and/or limitations with respect to the submission of flight plans during flight to ATC units.
-
             \note{If the flight plan is submitted for the purpose of obtaining air traffic control service, the aircraft is required to wait for an air traffic control clearance prior to proceeding under the conditions requiring compliance with air traffic control procedures. If the flight plan is submitted for the purpose of obtaining air traffic advisory service, the aircraft is required to wait for acknowledgment of receipt by the unit providing the service.}
         \end{enumerate}
     \end{enumeratesc}
@@ -230,10 +230,8 @@
         \item \textsc{Route of flight}
         \begin{enumerate}
             \item The route of flight shall be detailed in each clearance when deemed necessary. The phrase ``cleared flight planned route" may be used to describe any route or portion thereof, provided the route or portion thereof is identical to that filed in the flight plan and sufficient routing details are given to definitely establish the aircraft on its route. The phrases ``cleared (designation) departure" or ``cleared (designation) arrival" may be used when standard departure or arrival routes have been established by the appropriate ATS authority and published in Aeronautical Information Publications (AIPs).
-
             %References
             \note{See 6.3.2.3 pertaining to standard clearances for departing aircraft and 6.5.2.3 pertaining to standard clearances for arriving aircraft.}
-
             \item The phrase ``cleared flight planned route" shall not be used when granting a re-clearance.
             \item Subject to airspace constraints, ATC workload and traffic density, and provided coordination can be effected in a timely manner, an aircraft should whenever possible be offered the most direct routing.
         \end{enumerate}
@@ -282,25 +280,17 @@
 
     \begin{enumerate}
         \item In order to facilitate a safe and orderly flow of traffic, aircraft may, subject to conditions specified by the appropriate authority, be instructed to adjust speed in a specified manner. Flight crews should be given adequate notice of planned speed control.
-
         \note[1]{Application of speed control over a long period of time may affect aircraft fuel reserves.}
-
         %References
         \note[2]{Provisions concerning longitudinal separation using the Mach number technique are contained in Chapter 5, Separation Methods and Minima.}
-
         \item Speed control instructions shall remain in effect unless explicitly cancelled or amended by the controller.
-
         \note{Cancellation of any speed control instruction does not relieve the flight crew of compliance with speed limitations associated with airspace classifications as specified in Annex 11 — Air Traffic Services, Appendix 4.}
-
         \item Speed control shall not be applied to aircraft entering or established in a holding pattern.
         \item Speed adjustments should be limited to those necessary to establish and/or maintain a desired separation minimum or spacing. Instructions involving frequent changes of speed, including alternate speed increases and decreases, should be avoided.
         \item The flight crew shall inform the ATC unit concerned if at any time they are unable to comply with a speed instruction. In such cases, the controller shall apply an alternative method to achieve the desired spacing between the aircraft concerned.
         \item At levels at or above FL 250, speed adjustments should be expressed in multiples of 0.01 Mach; at levels below FL 250, speed adjustments should be expressed in multiples of 10 kt based on indicated airspeed (IAS).
-
         \note[1]{Mach 0.01 equals approximately 6 kt IAS at higher flight levels.}
-
         \note[2]{When an aircraft is heavily loaded and at a high level, its ability to change speed may, in cases, be very limited.}
-
         \item Aircraft shall be advised when a speed control restriction is no longer required.
     \end{enumerate}
 
@@ -309,9 +299,7 @@
     \begin{enumerate}
         \item In order to establish a desired spacing between two or more successive aircraft, the controller should first either reduce the speed of the last aircraft, or increase the speed of the lead aircraft, then adjust the speed(s) of the other aircraft in order.
         \item In order to maintain a desired spacing using speed control techniques, specific speeds need to be assigned to all the aircraft concerned.
-
         \note[1]{The true airspeed (TAS) of an aircraft will decrease during descent when maintaining a constant IAS. When two descending aircraft maintain the same IAS, and the leading aircraft is at the lower level, the TAS of the leading aircraft will be lower than that of the following aircraft. The distance between the two aircraft will thus be reduced, unless a sufficient speed differential is applied. For the purpose of calculating a desired speed differential between two succeeding aircraft, 6 kt IAS per 1 000 ft height difference may be used as a general rule. At levels below FL 80 the difference between IAS and TAS is negligible for speed control purposes.}
-
         \note[2]{Time and distance required to achieve a desired spacing will increase with higher levels, higher speeds, and when the aircraft is in a clean configuration.}
     \end{enumerate}
 
@@ -323,15 +311,12 @@
     \begin{enumerate}
         \item An aircraft should, when practicable, be authorized to absorb a period of notified terminal delay by cruising at a reduced speed for the latter portion of its flight.
         \item An arriving aircraft may be instructed to maintain its ``maximum speed", ``minimum clean speed", ``minimum speed", or a specified speed.
-
         \note{``Minimum clean speed" signifies the minimum speed at which an aircraft can be flown in a clean configuration, i.e. without deployment of lift-augmentation devices, speed brakes or landing gear.}
-        
         \item Speed reductions to less than 250 kt IAS for turbojet aircraft during initial descent from cruising level should be applied only with the concurrence of the flight crew.
         \item Instructions for an aircraft to simultaneously maintain a high rate of descent and reduce its speed should be avoided as such manoeuvres are normally not compatible. Any significant speed reduction during descent may require the aircraft to temporarily level off to reduce speed before continuing descent.
         \item Arriving aircraft should be permitted to operate in a clean configuration for as long as possible. Below FL 150, speed reductions for turbojet aircraft to not less than 220 kt IAS, which will normally be very close to the minimum speed of turbojet aircraft in a clean configuration, may be used.
         \item Only minor speed adjustments not exceeding plus/minus 20 kt IAS should be used for aircraft on intermediate and final approach.
         \item Speed control should not be applied to aircraft after passing a point 4 NM from the threshold on final approach.
-
         %References
         \note{The flight crew has a requirement to fly a stabilized approach (airspeed and configuration) typically by 3 NM from the threshold (Doc 8168, PANS-OPS, Volume I, Part III, Section 4, Chapter 3, 3.3 refers).}
     \end{enumerate}
@@ -339,9 +324,7 @@
     \subsubsection{SID and STAR}
 
     The flight crew shall comply with published SID and STAR speed restrictions unless the restrictions are explicitly cancelled or amended by the controller.
-
     \note[1]{Some SID and STAR speed restrictions ensure containment within RNAV departure or arrival procedure (e.g. maximum speed associated with a constant radius arc to a fix (RF) leg).}
-
     %References
     \note[2]{See 6.3.2.4 pertaining to clearances on a SID and 6.5.2.4 pertaining to clearances on a STAR.}
 
@@ -363,7 +346,6 @@
         \item Climbing aircraft may be instructed to maintain a specified rate of climb, a rate of climb equal to or greater than a specified value or a rate of climb equal to or less than a specified value.
         \item Descending aircraft may be instructed to maintain a specified rate of descent, a rate of descent equal to or greater than a specified value or a rate of descent equal to or less than a specified value.
         \item In applying vertical speed control, the controller should ascertain to which level(s) climbing aircraft can sustain a specified rate of climb or, in the case of descending aircraft, the specified rate of descent which can be sustained, and shall ensure that alternative methods of maintaining separation can be applied in a timely manner, if required.
-
         \note{Controllers need to be aware of aircraft performance characteristics and limitations in relation to a simultaneous application of horizontal and vertical speed limitations.}
     \end{enumerate}
 
@@ -373,10 +355,8 @@
         \item Change from instrument flight rules (IFR) flight to visual flight rules (VFR) flight is only acceptable when a message initiated by the pilot-in-command containing the specific expression ``CANCELLING MY IFR FLIGHT", together with the changes, if any, to be made to the current flight plan, is received by an air traffic services unit. No invitation to change from IFR flight to VFR flight is to be made either directly or by inference.
         \item No reply, other than the acknowledgment ``IFR FLIGHT CANCELLED AT ... (time)", should normally be made by an air traffic services unit.
         \item When an ATS unit is in possession of information that instrument meteorological conditions are likely to be encountered along the route of flight, a pilot changing from IFR flight to VFR flight should, if practicable, be so advised.
-
         %References
         \note{See Chapter 11, 11.4.3.2.1.}
-
         \item An ATC unit receiving notification of an aircraft's intention to change from IFR to VFR flight shall, as soon as practicable thereafter, so inform all other ATS units to whom the IFR flight plan was addressed, except those units through whose regions or areas the flight has already passed.
     \end{enumerate}
 
@@ -399,9 +379,7 @@
         \end{enumalph}
 
         \item Helicopters should be kept well clear of light aircraft when hovering or while air taxiing.
-
         \note[1]{Helicopters produce vortices when in flight and there is some evidence that, per kilogram of gross mass, their vortices are more intense than those of fixed-wing aircraft.}
-
         %References
         \note[2]{The provisions governing wake turbulence separation minima are set forth in Chapter 5, Section 5.8, and Chapter 8, Section 8.7.3.}
     \end{enumerate}
@@ -409,7 +387,6 @@
     \subsubsection{Indication of heavy wake turbulence category}
 
     For aircraft in the heavy wake turbulence category the word ``Heavy" shall be included immediately after the aircraft call sign in the initial radiotelephony contact between such aircraft and ATS units.
-
     %References
     \note{Wake turbulence categories are specified in the instructions for completing Item 9 of the flight plan in Appendix 2.}
 
@@ -441,7 +418,6 @@
     \begin{enumerate}
         \item The appropriate ATS unit shall establish the transition level to be used in the vicinity of the aerodrome(s) concerned and, when relevant, the terminal control area (TMA) concerned, for the appropriate period of time on the basis of QNH (altimeter subscale setting to obtain elevation when on the ground) reports and forecast mean sea level pressure, if required.
         \item The transition level shall be the lowest flight level available for use above the transition altitude established for the aerodrome(s) concerned. Where a common transition altitude has been established for two or more aerodromes which are so closely located as to require coordinated procedures, the appropriate ATS units shall establish a common transition level to be used at any given time in the vicinity of the aerodrome and, when relevant, in the TMA concerned.
-
         \note{See \ref{4.10.3.2} regarding the determination of the lowest usable flight level(s) for control areas.}
     \end{enumerate}
 
@@ -450,11 +426,8 @@
     \begin{enumerate}
         \item Except when specifically authorized by the appropriate authority, cruising levels below the minimum flight altitudes established by the State shall not be assigned.
         \item \label{4.10.3.2} ATC units shall, when circumstances warrant it, determine the lowest usable flight level or levels for the whole or parts of the control area for which they are responsible, use it when assigning flight levels and pass it to pilots on request.
-
         \note[1]{Unless otherwise prescribed by the State concerned, the lowest usable flight level is that flight level which corresponds to, or is immediately above, the established minimum flight altitude.}
-
         \note[2]{The portion of a control area for which a particular lowest usable flight level applies is determined in accordance with air traffic services requirements.}
-
         %References
         \note[3]{The objectives of the air traffic control service as prescribed in Annex 11 do not include prevention of collision with terrain. The procedures prescribed in this document do not relieve pilots of their responsibility to ensure that any clearances issued by air traffic control units are safe in this respect. When an IFR flight is vectored or is given a direct routing which takes the aircraft off an ATS route, the procedures in Chapter 8, 8.6.5.2 apply.}
     \end{enumerate}
@@ -463,9 +436,7 @@
 
     \begin{enumerate}
         \item Appropriate ATS units shall at all times have available for transmission to aircraft in flight, on request, the information required to determine the lowest flight level which will ensure adequate terrain clearance on routes or segments of routes for which this information is required.
-
         \note{If so prescribed on the basis of regional air navigation agreements, this information may consist of climatological data.}
-
         \item Flight information centres and ACCs shall have available for transmission to aircraft, on request, an appropriate number of QNH reports or forecast pressures for the FIRs and control areas for which they are responsible, and for those adjacent.
         \item The flight crew shall be provided with the transition level in due time prior to reaching it during descent. This may be accomplished by voice communications, ATIS broadcast or data link.
         \item The transition level shall be included in approach clearances when so prescribed by the appropriate authority or requested by the pilot.
@@ -480,11 +451,8 @@
         \noindent in which cases the QFE for the relevant runway threshold shall be provided.
 
         \item Altimeter settings provided to aircraft shall be rounded down to the nearest lower whole hectopascal.
-
         \note[1]{Unless otherwise prescribed by the State concerned, the lowest usable flight level is that flight level which corresponds to, or is immediately above, the established minimum flight altitude.}
-
         \note[2]{The portion of a control area for which a particular lowest usable flight level applies is determined in accordance with air traffic services requirements.}
-
         %References
         \note[3]{See Foreword, Note 2 to paragraph 2.1.}
     \end{enumerate}
@@ -497,10 +465,8 @@
         \item \label{4.11.1.1} On routes defined by designated significant points, position reports shall be made by the aircraft when over, or as soon as possible after passing, each designated compulsory reporting point, except as provided in \ref{4.11.1.3} and \ref{4.11.3}. Additional reports over other points may be requested by the appropriate ATS unit.
         \item \label{4.11.1.2} On routes not defined by designated significant points, position reports shall be made by the aircraft as soon as possible after the first half hour of flight and at hourly intervals thereafter, except as provided in \ref{4.11.1.3}. Additional reports at shorter intervals of time may be requested by the appropriate ATS unit.
         \item \label{4.11.1.3} Under conditions specified by the appropriate ATS authority, flights may be exempted from the requirement to make position reports at each designated compulsory reporting point or interval. In applying this, account should be taken of the meteorological requirement for the making and reporting of routine aircraft observations.
-
         %References
         \note{This is intended to apply in cases where adequate flight progress data are available from other sources, e.g. radar or ADS-B (see Chapter 8, 8.6.4.4), or ADS-C (see Chapter 13) and in other circumstances where the omission of routine reports from selected flights is found to be acceptable.}
-
         \item The position reports required by \ref{4.11.1.1} and \ref{4.11.1.2} shall be made to the ATS unit serving the airspace in which the aircraft is operated. In addition, when so prescribed by the appropriate ATS authority in aeronautical information publications or requested by the appropriate ATS unit, the last position report before passing from one FIR or control area to an adjacent FIR or control area shall be made to the ATS unit serving the airspace about to be entered.
         \item If a position report is not received at the expected time, subsequent control shall not be based on the assumption that the estimated time is accurate. Immediate action shall be taken to obtain the report if it is likely to have any bearing on the control of other aircraft.
     \end{enumerate}
@@ -524,7 +490,6 @@
         \end{enumerate}
 
         \item When assigned a speed to maintain, the flight crew shall include this speed in their position reports. The assigned speed shall also be included in the initial call after a change of air-ground voice communication channel, whether or not a full position report is required.
-
         \note{Omission of element \ref{4.11.2.1d} may be possible when flight level or altitude, as appropriate, derived from pressure-altitude information can be made continuously available to controllers in labels associated with the position indication of aircraft and when adequate procedures have been developed to guarantee the safe and efficient use of this altitude information.}
     \end{enumerate}
 
@@ -568,9 +533,7 @@
         \item The method(s) of presenting information and data shall be in accordance with Human Factors principles. All data, including data related to individual aircraft, shall be presented in a manner minimizing the potential for misinterpretation or misunderstanding.
         \item Means and methods for manually entering data in ATC automation systems shall be in accordance with Human Factors principles.
         \item When flight progress strips (FPS) are used, there should be at least one individual FPS for each flight. The number of FPS for individual flights shall be sufficient to meet the requirements of the ATS unit concerned. Procedures for annotating data and provisions specifying the types of data to be entered on FPS, including the use of symbols, shall be specified by the appropriate ATS authority.
-
         \note{Guidance material on the use of paper FPS is contained in the Air Traffic Services Planning Manual (Doc 9426).}
-
         \item Data generated automatically shall be presented to the controller in a timely manner. The presentation of information and data for individual flights shall continue until such time as the data is no longer required for the purpose of providing control, including conflict detection and the coordination of flights, or until terminated by the controller.
     \end{enumerate}
 
@@ -591,7 +554,6 @@
     \begin{enumerate}        
         \item Before entering an airspace where data link applications are used by the ATS unit, data link communications shall be initiated between the aircraft and the ATS unit in order to register the aircraft and, when necessary, allow the start of a data link application. This shall be initiated by the aircraft, either automatically or by the pilot, or by the ATS unit on address forwarding.
         \item The logon address associated with an ATS unit shall be published in Aeronautical Information Publications in accordance with Annex 15.
-
         \note{A given FIR may have multiple logon addresses; and more than one FIR may share the same logon address.}
     \end{enumerate}
 
