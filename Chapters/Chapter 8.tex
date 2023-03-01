@@ -9,7 +9,7 @@
 
 \subsection[ATS surveillance systems capabilities]{ATS SURVEILLANCE SYSTEMS CAPABILITIES}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+\begin{enumnoss}
     \item ATS surveillance systems used in the provision of air traffic services shall have a very high level of reliability, availability and integrity. The possibility of system failures or significant system degradations which may cause complete or partial interruptions of service shall be very remote. Backup facilities shall be provided.
     \note[1]{An ATS surveillance system will normally consist of a number of integrated elements, including sensor(s), data transmission links, data-processing systems and situation displays.}
     \note[2]{Guidance material pertaining to use of radar and to system performance is contained in the \emph{Manual on Testing of Radio Navigation Aids} (Doc 8071), the \emph{Manual on the Secondary Surveillance Radar (SSR) Systems} (Doc 9684) and the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
@@ -50,16 +50,16 @@
     %References
     \note{States will provide information on the area or areas where PSR, SSR, ADS-B and MLAT systems are in use as well as ATS surveillance services and procedures in accordance with Annex 15, 4.1.1 and Appendix 1.}
 
-    \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*]
+    \begin{enumnoss}
         \item The provision of ATS surveillance services shall be limited when position data quality degrades below a level specified by the appropriate ATS authority.
-    \end{enumerate}
+    \end{enumnoss}
 
     \item Where PSR and SSR are required to be used in combination, SSR alone may be used in the event of PSR failure to provide separation between identified transponder-equipped aircraft, provided the accuracy of the SSR position indications has been verified by monitor equipment or other means.
-\end{enumerate}
+\end{enumnoss}
 
 \subsection[Situation display]{SITUATION DISPLAY}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+\begin{enumnoss}
     \item A situation display providing surveillance information to the controller shall, as a minimum, include position indications, map information required to provide ATS surveillance services and, where available, information concerning the identity of the aircraft and the aircraft level.
     \item The ATS surveillance system shall provide for a continuously updated presentation of surveillance information, including position indications.
     \item Position indications may be displayed as:
@@ -83,19 +83,19 @@
     \item Labels associated with displayed targets should be used to provide, in alphanumeric form, information derived from the means of surveillance and, where necessary, the flight data processing system.
     \item Labels shall, as a minimum, include information relating to the identity of the aircraft, e.g. SSR code or aircraft identification and, if available, pressure-altitude-derived level information. This information may be obtained from SSR Mode A, SSR Mode C, SSR Mode S and/or ADS-B.
     \item Labels shall be associated with their position indications in a manner precluding erroneous identification by or confusion on the part of the controller. All label information shall be presented in a clear and concise manner.
-\end{enumerate}
+\end{enumnoss}
 
 \subsection[Communications]{COMMUNICATIONS}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+\begin{enumnoss}
     \item The level of reliability and availability of communications systems shall be such that the possibility of system failures or significant degradations is very remote. Adequate backup facilities shall be provided.
     \note{Guidance material and information pertaining to system reliability and availability are contained in Annex 10, Volume I, and the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
     \item Direct pilot-controller communications shall be established prior to the provision of ATS surveillance services, unless special circumstances, such as emergencies, dictate otherwise.
-\end{enumerate}
+\end{enumnoss}
 
 \subsection[Provision of ATS surveillance services]{PROVISION OF ATS SURVEILLANCE SERVICES}
 
-\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+\begin{enumnoss}
     \item Information derived from ATS surveillance systems, including safety-related alerts and warnings such as conflict alert and minimum safe altitude warning, should be used to the extent possible in the provision of air traffic control service in order to improve capacity and efficiency as well as to enhance safety.
     \item The number of aircraft simultaneously provided with ATS surveillance services shall not exceed that which can safely be handled under the prevailing circumstances, taking into account:
 
@@ -105,7 +105,7 @@
         \item assessments of controller workloads, taking into account different aircraft capabilities, and sector capacity; and
         \item the degree of technical reliability and availability of the primary and backup communications, navigation and surveillance systems, both in the aircraft and on the ground.
     \end{enumalph}
-\end{enumerate}
+\end{enumnoss}
 
 \subsection[Use of SSR transponders and ADS-B transmitters]{USE OF SSR TRANSPONDERS AND ADS-B TRANSMITTERS}
 
@@ -145,12 +145,21 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
 \end{enumerate}
 
 \subsubsection{Operation of ADS-B transmitters}
-
 \begin{enumempty}[labelindent=\parindent]
-    \item \note[1]{To indicate that it is in a state of emergency or to transmit other urgent information, an aircraft equipped with ADS-B might operate the emergency and/or urgency mode as follows: \begin{enumalph} \item emergency; \item communication failure; \item unlawful interference; \item minimum fuel; and/or \item medical. \end{enumalph}}
-    %References
-    \item \note[2]{Some aircraft equipped with first generation ADS-B avionics do not have the capability described in Note 1 above and only have the capability to transmit a general emergency alert regardless of the code selected by the pilot.}
+    \begin{noteev}
+        \item \note[1]{To indicate that it is in a state of emergency or to transmit other urgent information, an aircraft equipped with ADS-B might operate the emergency and/or urgency mode as follows:}
+        \begin{enumalph}
+            \item emergency;
+            \item communication failure;
+            \item unlawful interference;
+            \item minimum fuel; and/or
+            \item medical.
+        \end{enumalph}
+        %References
+        \item \note[2]{Some aircraft equipped with first generation ADS-B avionics do not have the capability described in Note 1 above and only have the capability to transmit a general emergency alert regardless of the code selected by the pilot.}
+    \end{noteev}
 \end{enumempty}
+
 
 \begin{enumerate}
     %Review
@@ -254,8 +263,16 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
         
         \begin{enumalph}
             \item by correlating a particular radar position indication with an aircraft reporting its position over, or as bearing and distance from, a point shown on the situation display, and by ascertaining that the track of the particular radar position is consistent with the aircraft path or reported heading;
-            \note[1]{Caution must be exercised when employing this method since a position reported in relation to a point may not coincide precisely with the radar position indication of the aircraft on the situation display. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.: \begin{enumerate}[label=\roman*),leftmargin=*,labelsep=0pt,labelindent=0pt] \item a level or levels above which this method may not be applied in respect of specified navigation aids; or \item a distance from the radar site beyond which this method may not be applied. \end{enumerate}}
-            \note[2]{The term “a point” refers to a geographical point suitable for the purposes of identification. It is normally a reporting point defined by reference to a radio navigation aid or aids.}
+            
+            \begin{noteev}
+                \note[1]{Caution must be exercised when employing this method since a position reported in relation to a point may not coincide precisely with the radar position indication of the aircraft on the situation display. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.:}
+                \begin{enumroman}
+                    \item a level or levels above which this method may not be applied in respect of specified navigation aids; or
+                    \item a distance from the radar site beyond which this method may not be applied.
+                \end{enumroman}
+                \note[2]{The term “a point” refers to a geographical point suitable for the purposes of identification. It is normally a reporting point defined by reference to a radio navigation aid or aids.}
+            \end{noteev}
+            
             \item by correlating an observed radar position indication with an aircraft which is known to have just departed, provided that the identification is established within 1 NM from the end of the runway used. Particular care should be taken to avoid confusion with aircraft holding over or overflying the aerodrome, or with aircraft departing from or making a missed approach over adjacent runways;
             %References
             \item by transfer of identification (see 8.6.3);
@@ -268,10 +285,10 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
             
             \noindent When using these methods, the controller shall:
             
-            \begin{enumerate}[label=\roman*),labelsep=0pt,leftmargin=*,labelindent=0pt]
+            \begin{enumroman}
                 \item verify that the movements of not more than one radar position indication correspond with those of the aircraft; and
                 \item ensure that the manoeuvre(s) will not carry the aircraft outside the coverage of the radar or the situation display.
-            \end{enumerate}
+            \end{enumroman}
         
             \note[1]{Caution must be exercised when employing these methods in areas where route changes normally take place.}
             %References
@@ -304,7 +321,15 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
         \item direct designation (pointing with the finger) of the position indication, if the two situation displays are adjacent, or if a common “conference” type of situation display is used;
         \note{Attention must be given to any errors which might occur due to parallax effects.}
         \item designation of the position indication by reference to, or in terms of bearing and distance from, a geographical position or navigational facility accurately indicated on both situation displays, together with the track of the observed position indication if the route of the aircraft is not known to both controllers;
-        \note{Caution must be exercised before transferring identification using this method, particularly if other position indications are observed on similar headings and in close proximity to the aircraft under control. Inherent radar deficiencies, such as inaccuracies in bearing and distance of the radar position indications displayed on individual situation displays and parallax errors, may cause the indicated position of an aircraft in relation to the known point to differ between the two situation displays. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.: \begin{enumerate}[label=\roman*),leftmargin=*,labelsep=0pt,labelindent=0pt] \item a maximum distance from the common reference point used by the two controllers; and \item a maximum distance between the position indication as observed by the accepting controller and the one stated by the transferring controller. \end{enumerate}}
+        
+        \begin{noteev}
+            \note{Caution must be exercised before transferring identification using this method, particularly if other position indications are observed on similar headings and in close proximity to the aircraft under control. Inherent radar deficiencies, such as inaccuracies in bearing and distance of the radar position indications displayed on individual situation displays and parallax errors, may cause the indicated position of an aircraft in relation to the known point to differ between the two situation displays. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.:}
+            \begin{enumroman}
+                \item a maximum distance from the common reference point used by the two controllers; and
+                \item a maximum distance between the position indication as observed by the accepting controller and the one stated by the transferring controller.
+            \end{enumroman}
+        \end{noteev}
+
         \item where applicable, issuance of an instruction to the aircraft by the transferring controller to change SSR code and the observation of the change by the accepting controller; or
         \item issuance of an instruction to the aircraft by the transferring controller to squawk/transmit IDENT and observation of this response by the accepting controller.
         %References

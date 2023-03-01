@@ -31,11 +31,20 @@
 \setlist[enumerate,2]{label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{enumi}.\arabic*}
 \setlist[enumerate,3]{label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{enumi}.\arabic{enumii}.\arabic*}
 
+\newlist{enumnoss}{enumerate}{3}
+\setlist[enumnoss]{wide,topsep=0pt,itemsep=0pt,parsep=\parskip,labelsep=0.3cm}
+\setlist[enumnoss,1]{label=\arabic{section}.\arabic{subsection}.\arabic*}
+\setlist[enumnoss,2]{label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*}
+\setlist[enumnoss,3]{label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic{enumii}.\arabic*}
+
 \newlist{enumalph}{enumerate}{1}
 \setlist[enumalph]{wide,topsep=0pt,itemsep=0pt,parsep=\parskip,label=\alph*), labelsep=0.2cm, leftmargin=*}
 
 \newlist{enumarab}{enumerate}{1}
 \setlist[enumarab]{wide,topsep=0pt,itemsep=0pt,parsep=\parskip,label=\arabic*),labelsep=0.2cm,labelindent=0pt,leftmargin=*}
+
+\newlist{enumroman}{enumerate}{1}
+\setlist[enumroman]{wide,topsep=0pt,itemsep=0pt,parsep=\parskip,label=\roman*),labelsep=0pt,leftmargin=*,labelindent=0pt}
 
 \newlist{enumempty}{enumerate}{1}
 \setlist[enumempty]{wide,topsep=0pt,itemsep=0pt,parsep=\parskip,labelsep=0pt,labelindent=0pt,label=}
@@ -120,8 +129,9 @@
 	\fi%
 }
 
-\newcommand{\nosssection}{%
-	[label=\arabic{section}.\arabic{subsection}.\arabic*]%
-}
 
+% ----- Environments ----- %
 \newenvironment{enumeratesc}{\begin{enumerate}[itemsep=0.2cm]\centering}{\end{enumerate}}
+\newenvironment{enumromannosep}{\begin{enumroman}[labelsep=0cm,parsep=0pt]}{\end{enumroman}}
+
+\newenvironment{noteev}{\itshape}{\normalfont}
