@@ -1,325 +1,313 @@
-\documentclass[../vATM.tex]{subfiles}
+\chapterbegin
 
-\setcounter{section}{7}
+\section[ATS Surveillance Services]{ATS SURVEILLANCE SERVICES}
 
-\begin{document}
+\begin{enumempty}[labelindent=\parindent]
+    %References
+    \item \note{ADS-contract (ADS-C), at this time used wholly to provide procedural separation, is covered in Chapter 13.}
+\end{enumempty}
 
-    \setcounter{figure}{0}
-    
-    \thispagestyle{1page}
+\subsection[ATS surveillance systems capabilities]{ATS SURVEILLANCE SYSTEMS CAPABILITIES}
 
-    \section[ATS Surveillance Services]{ATS SURVEILLANCE SERVICES}
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+    \item ATS surveillance systems used in the provision of air traffic services shall have a very high level of reliability, availability and integrity. The possibility of system failures or significant system degradations which may cause complete or partial interruptions of service shall be very remote. Backup facilities shall be provided.
+    \note[1]{An ATS surveillance system will normally consist of a number of integrated elements, including sensor(s), data transmission links, data-processing systems and situation displays.}
+    \note[2]{Guidance material pertaining to use of radar and to system performance is contained in the \emph{Manual on Testing of Radio Navigation Aids} (Doc 8071), the \emph{Manual on the Secondary Surveillance Radar (SSR) Systems} (Doc 9684) and the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
+    \note[3]{Guidance material pertaining to use of ADS-B and MLAT systems and their system performance is contained in Cir 326.}
+    \note[4]{Functional and performance requirements pertaining to ATS surveillance systems are contained in \emph{Annex 10} — Aeronautical Telecommunications, \emph{Volume IV} — Surveillance and Collision Avoidance Systems.}
+    \item ATS surveillance systems should have the capability to receive, process and display, in an integrated manner, data from all the connected sources.
+    \item ATS surveillance systems should be capable of integration with other automated systems used in the provision of ATS, and should provide for an appropriate level of automation with the objectives of improving the accuracy and timeliness of data displayed to the controller and reducing controller workload and the need for verbal coordination between adjacent control positions and ATC units.
+    \item ATS surveillance systems should provide for the display of safety-related alerts and warnings, including conflict alert, minimum safe altitude warning, conflict prediction and unintentionally duplicated SSR codes and aircraft identification.
+    \item States should, to the extent possible, facilitate the sharing of information derived from ATS surveillance systems in order to extend and improve surveillance coverage in adjacent control areas.
+    \item States should, on the basis of regional air navigation agreements, provide for the automated exchange of coordination data relevant to aircraft being provided with ATS surveillance services, and establish automated coordination procedures.
+    \item ATS surveillance systems, such as primary surveillance radar (PSR), secondary surveillance radar (SSR), ADS-B and MLAT systems may be used either alone or in combination in the provision of air traffic services, including in the provision of separation between aircraft, provided:
 
-    \begin{enumempty}[labelindent=\parindent]
+    \begin{enumalph}
+        \item reliable coverage exists in the area;
+        \item the probability of detection, the accuracy and the integrity of the ATS surveillance system(s) are satisfactory; and
+        \item in the case of ADS-B, the availability of data from participating aircraft is adequate.
+    \end{enumalph}
+
+    \item PSR systems should be used in circumstances where other ATS surveillance systems alone would not meet the air traffic services requirements.
+    \item SSR systems, especially those utilizing monopulse techniques or having Mode S capability or MLAT, may be used alone, including in the provision of separation between aircraft, provided:
+
+    \begin{enumalph}
+        \item the carriage of SSR transponders is mandatory within the area; and
+        \item identification is established and maintained.
+    \end{enumalph}
+
+    \item ADS-B shall only be used for the provision of air traffic control service provided the quality of the information contained in the ADS-B message exceeds the values specified by the appropriate ATS authority.
+    \item ADS-B may be used alone, including in the provision of separation between aircraft, provided:
+
+    \begin{enumalph}
+        \item identification of ADS-B-equipped aircraft is established and maintained;
+        \item the data integrity measure in the ADS-B message is adequate to support the separation minimum;
+        \item there is no requirement for detection of aircraft not transmitting ADS-B; and
+        \item there is no requirement for determination of aircraft position independent of the position-deter\-mining elements of the aircraft navigation system.
+    \end{enumalph}
+
+    \item The provision of ATS surveillance services shall be limited to specified areas of coverage and shall be subject to such other limitations as have been specified by the appropriate ATS authority. Adequate information on the operating methods used shall be published in aeronautical information publications, as well as operating practices and/or equipment limitations having direct effects on the operation of the air traffic services.
+    %References
+    \note{States will provide information on the area or areas where PSR, SSR, ADS-B and MLAT systems are in use as well as ATS surveillance services and procedures in accordance with Annex 15, 4.1.1 and Appendix 1.}
+
+    \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*]
+        \item The provision of ATS surveillance services shall be limited when position data quality degrades below a level specified by the appropriate ATS authority.
+    \end{enumerate}
+
+    \item Where PSR and SSR are required to be used in combination, SSR alone may be used in the event of PSR failure to provide separation between identified transponder-equipped aircraft, provided the accuracy of the SSR position indications has been verified by monitor equipment or other means.
+\end{enumerate}
+
+\subsection[Situation display]{SITUATION DISPLAY}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+    \item A situation display providing surveillance information to the controller shall, as a minimum, include position indications, map information required to provide ATS surveillance services and, where available, information concerning the identity of the aircraft and the aircraft level.
+    \item The ATS surveillance system shall provide for a continuously updated presentation of surveillance information, including position indications.
+    \item Position indications may be displayed as:
+
+    \begin{enumalph}
+        \item individual position symbols, e.g. PSR, SSR, ADS-B or MLAT symbols, or combined symbols;
+        \item PSR blips; and
+        \item SSR responses.
+    \end{enumalph}
+
+    \item When applicable, distinct symbols should be used for presentation of:
+
+    \begin{enumalph}
+        \item unintentionally duplicated SSR codes and/or aircraft identification that are unintentionally duplicated;
+        \item predicted positions for a non-updated track; and
+        \item plot and track data.
+    \end{enumalph}
+
+    \item Where surveillance data quality degrades such that services need to be limited, symbology or other means shall be used to provide the controller with an indication of the condition.
+    \item Reserved SSR codes, including 7500, 7600 and 7700, operation of IDENT, ADS-B emergency and/or urgency modes, safety-related alerts and warnings as well as information related to automated coordination shall be presented in a clear and distinct manner, providing for ease of recognition.
+    \item Labels associated with displayed targets should be used to provide, in alphanumeric form, information derived from the means of surveillance and, where necessary, the flight data processing system.
+    \item Labels shall, as a minimum, include information relating to the identity of the aircraft, e.g. SSR code or aircraft identification and, if available, pressure-altitude-derived level information. This information may be obtained from SSR Mode A, SSR Mode C, SSR Mode S and/or ADS-B.
+    \item Labels shall be associated with their position indications in a manner precluding erroneous identification by or confusion on the part of the controller. All label information shall be presented in a clear and concise manner.
+\end{enumerate}
+
+\subsection[Communications]{COMMUNICATIONS}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+    \item The level of reliability and availability of communications systems shall be such that the possibility of system failures or significant degradations is very remote. Adequate backup facilities shall be provided.
+    \note{Guidance material and information pertaining to system reliability and availability are contained in Annex 10, Volume I, and the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
+    \item Direct pilot-controller communications shall be established prior to the provision of ATS surveillance services, unless special circumstances, such as emergencies, dictate otherwise.
+\end{enumerate}
+
+\subsection[Provision of ATS surveillance services]{PROVISION OF ATS SURVEILLANCE SERVICES}
+
+\begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
+    \item Information derived from ATS surveillance systems, including safety-related alerts and warnings such as conflict alert and minimum safe altitude warning, should be used to the extent possible in the provision of air traffic control service in order to improve capacity and efficiency as well as to enhance safety.
+    \item The number of aircraft simultaneously provided with ATS surveillance services shall not exceed that which can safely be handled under the prevailing circumstances, taking into account:
+
+    \begin{enumalph}
+        \item the structural complexity of the control area or sector concerned;
+        \item the functions to be performed within the control area or sector concerned;
+        \item assessments of controller workloads, taking into account different aircraft capabilities, and sector capacity; and
+        \item the degree of technical reliability and availability of the primary and backup communications, navigation and surveillance systems, both in the aircraft and on the ground.
+    \end{enumalph}
+\end{enumerate}
+
+\subsection[Use of SSR transponders and ADS-B transmitters]{USE OF SSR TRANSPONDERS AND ADS-B TRANSMITTERS}
+
+\subsubsection{General}
+
+To ensure the safe and efficient use of ATS surveillance services, pilots and controllers shall strictly adhere to published operating procedures and standard radiotelephony phraseology shall be used. The correct setting of transponder codes and/or aircraft identification shall be ensured at all times.
+
+\subsubsection{SSR code management}
+
+\begin{enumerate}
+    \item Codes 7700, 7600 and 7500 shall be reserved internationally for use by pilots encountering a state of emergency, radiocommunication failure or unlawful interference, respectively.
+
+    % 8.5.2.2
+    % 8.5.2.3
+\end{enumerate}
+
+\subsubsection{Operation of SSR transponders}
+
+\begin{enumempty}[labelindent=\parindent]
+    \item \note{SSR transponder operating procedures are contained in \emph{Procedures for Air Navigation Services — Aircraft Operations} (PANS-OPS, Doc 8168), Volume I, Part III, Section 3.}
+\end{enumempty}
+
+\begin{enumerate}
+    \item When it is observed that the Mode A code shown on the situation display is different to what has been assigned to the aircraft, the pilot shall be requested to confirm the code selected and, if the situation warrants (e.g. not being a case of unlawful interference), to reselect the correct code.
+    \item If the discrepancy between assigned and displayed Mode A codes still persists, the pilot may be requested to stop the operation of the aircraft’s transponder. The next control position and any other affected unit using SSR and/or MLAT in the provision of ATS shall be informed accordingly.
+    %Review
+    \item Aircraft equipped with Mode S having an aircraft identification feature shall transmit the aircraft identification as specified in Item 7 of the ICAO flight plan or, when no flight plan has been filed, the aircraft registration.
+    \note{All Mode S-equipped aircraft engaged in international civil aviation are required to have an aircraft identification feature (Annex 10, Volume IV, Chapter 2, 2.1.5.2, refers).}
+    \item Whenever it is observed on the situation display that the aircraft identification transmitted by a Mode S-equipped aircraft is different from that expected from the aircraft, the pilot shall be requested to confirm and, if necessary, re-enter the correct aircraft identification.
+    \item If, following confirmation by the pilot that the correct aircraft identification has been set on the Mode S identification feature, the discrepancy continues to exist, the following actions shall be taken by the controller:
+
+    \begin{enumalph}
+        \item inform the pilot of the persistent discrepancy;
+        \item where possible, correct the label showing the aircraft identification on the situation display; and
+        \item notify the erroneous aircraft identification transmitted by the aircraft to the next control position and any other interested unit using Mode S for identification purposes.
+    \end{enumalph}
+\end{enumerate}
+
+\subsubsection{Operation of ADS-B transmitters}
+
+\begin{enumempty}[labelindent=\parindent]
+    \item \note[1]{To indicate that it is in a state of emergency or to transmit other urgent information, an aircraft equipped with ADS-B might operate the emergency and/or urgency mode as follows: \begin{enumalph} \item emergency; \item communication failure; \item unlawful interference; \item minimum fuel; and/or \item medical. \end{enumalph}}
+    %References
+    \item \note[2]{Some aircraft equipped with first generation ADS-B avionics do not have the capability described in Note 1 above and only have the capability to transmit a general emergency alert regardless of the code selected by the pilot.}
+\end{enumempty}
+
+\begin{enumerate}
+    %Review
+    \item Aircraft equipped with ADS-B having an aircraft identification feature shall transmit the aircraft identification as specified in Item 7 of the ICAO flight plan or, when no flight plan has been filed, the aircraft registration.
+    \item Whenever it is observed on the situation display that the aircraft identification transmitted by an ADS-B-equipped aircraft is different from that expected from the aircraft, the pilot shall be requested to confirm and, if necessary, re-enter the correct aircraft identification.
+    \item If, following confirmation by the pilot that the correct aircraft identification has been set on the ADS-B identification feature, the discrepancy continues to exist, the following actions shall be taken by the controller:
+
+    \begin{enumalph}
+        \item inform the pilot of the persistent discrepancy;
+        \item where possible, correct the label showing the aircraft identification on the situation display; and
+        \item notify the next control position and any other unit concerned of the erroneous aircraft identification transmitted by the aircraft.
+    \end{enumalph}
+\end{enumerate}
+
+\subsubsection[Level information based on the use of pressure-altitude information]{Level information based on the \\ use of pressure-altitude information}
+
+\begin{enumeratesc}
+    \item \textsc{Verification of level information}
+    \begin{enumerate}
+        \item The tolerance value used to determine that pressure-altitude-derived level information displayed to the controller is accurate shall be $\pm$200 ft in RVSM airspace. In other airspace, it shall be $\pm$300 ft, except that the appropriate ATS authority may specify a smaller criterion, but not less than $\pm$200 ft, if this is found to be more practical. Geometric height information shall not be used for separation.
+        \item Verification of pressure-altitude-derived level information displayed to the controller shall be effected at least once by each suitably equipped ATC unit on initial contact with the aircraft concerned or, if this is not feasible, as soon as possible thereafter. The verification shall be effected by simultaneous comparison with altimeter-derived level information received from the same aircraft by radiotelephony. The pilot of the aircraft whose pressure-altitude-derived level information is within the approved tolerance value need not be advised of such verification. Geometric height information shall not be used to determine if altitude differences exist.
+        \item If the displayed level information is not within the approved tolerance value or when a discrepancy in excess of the approved tolerance value is detected subsequent to verification, the pilot shall be advised accordingly and requested to check the pressure setting and confirm the aircraft’s level.
+        \item If, following confirmation of the correct pressure setting the discrepancy continues to exist, the following action should be taken according to circumstances:
+
+        \begin{enumalph}
+            \item request the pilot to stop Mode C or ADS-B altitude data transmission, provided this does not cause the loss of position and identity information, and notify the next control positions or ATC unit concerned with the aircraft of the action taken; or
+            \item inform the pilot of the discrepancy and request that the relevant operation continue in order to prevent loss of position and identity information of the aircraft and, when authorized by the appropriate ATS authority, override the label-displayed level information with the reported level. Notify the next control position or ATC unit concerned with the aircraft of the action taken.
+        \end{enumalph}
+    \end{enumerate}
+
+    \item \textsc{Determination of level occupancy}
+    \begin{enumerate}
+        \item The criterion which shall be used to determine that a specific level is occupied by an aircraft shall be $\pm$200 ft in RVSM airspace. In other airspace, it shall be $\pm$300 ft, except that the appropriate ATS authority may specify a smaller criterion, but not less than $\pm$200 ft, if this is found to be more practical.
+        \note{For a brief explanation of the considerations underlying this value, see the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
         %References
-        \item \note{ADS-contract (ADS-C), at this time used wholly to provide procedural separation, is covered in Chapter 13.}
-    \end{enumempty}
-
-    \subsection[ATS surveillance systems capabilities]{ATS SURVEILLANCE SYSTEMS CAPABILITIES}
-
-    \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
-        \item ATS surveillance systems used in the provision of air traffic services shall have a very high level of reliability, availability and integrity. The possibility of system failures or significant system degradations which may cause complete or partial interruptions of service shall be very remote. Backup facilities shall be provided.
-        \note[1]{An ATS surveillance system will normally consist of a number of integrated elements, including sensor(s), data transmission links, data-processing systems and situation displays.}
-        \note[2]{Guidance material pertaining to use of radar and to system performance is contained in the \emph{Manual on Testing of Radio Navigation Aids} (Doc 8071), the \emph{Manual on the Secondary Surveillance Radar (SSR) Systems} (Doc 9684) and the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
-        \note[3]{Guidance material pertaining to use of ADS-B and MLAT systems and their system performance is contained in Cir 326.}
-        \note[4]{Functional and performance requirements pertaining to ATS surveillance systems are contained in \emph{Annex 10} — Aeronautical Telecommunications, \emph{Volume IV} — Surveillance and Collision Avoidance Systems.}
-        \item ATS surveillance systems should have the capability to receive, process and display, in an integrated manner, data from all the connected sources.
-        \item ATS surveillance systems should be capable of integration with other automated systems used in the provision of ATS, and should provide for an appropriate level of automation with the objectives of improving the accuracy and timeliness of data displayed to the controller and reducing controller workload and the need for verbal coordination between adjacent control positions and ATC units.
-        \item ATS surveillance systems should provide for the display of safety-related alerts and warnings, including conflict alert, minimum safe altitude warning, conflict prediction and unintentionally duplicated SSR codes and aircraft identification.
-        \item States should, to the extent possible, facilitate the sharing of information derived from ATS surveillance systems in order to extend and improve surveillance coverage in adjacent control areas.
-        \item States should, on the basis of regional air navigation agreements, provide for the automated exchange of coordination data relevant to aircraft being provided with ATS surveillance services, and establish automated coordination procedures.
-        \item ATS surveillance systems, such as primary surveillance radar (PSR), secondary surveillance radar (SSR), ADS-B and MLAT systems may be used either alone or in combination in the provision of air traffic services, including in the provision of separation between aircraft, provided:
-
-        \begin{enumalph}
-            \item reliable coverage exists in the area;
-            \item the probability of detection, the accuracy and the integrity of the ATS surveillance system(s) are satisfactory; and
-            \item in the case of ADS-B, the availability of data from participating aircraft is adequate.
-        \end{enumalph}
-
-        \item PSR systems should be used in circumstances where other ATS surveillance systems alone would not meet the air traffic services requirements.
-        \item SSR systems, especially those utilizing monopulse techniques or having Mode S capability or MLAT, may be used alone, including in the provision of separation between aircraft, provided:
-
-        \begin{enumalph}
-            \item the carriage of SSR transponders is mandatory within the area; and
-            \item identification is established and maintained.
-        \end{enumalph}
-
-        \item ADS-B shall only be used for the provision of air traffic control service provided the quality of the information contained in the ADS-B message exceeds the values specified by the appropriate ATS authority.
-        \item ADS-B may be used alone, including in the provision of separation between aircraft, provided:
-
-        \begin{enumalph}
-            \item identification of ADS-B-equipped aircraft is established and maintained;
-            \item the data integrity measure in the ADS-B message is adequate to support the separation minimum;
-            \item there is no requirement for detection of aircraft not transmitting ADS-B; and
-            \item there is no requirement for determination of aircraft position independent of the position-deter\-mining elements of the aircraft navigation system.
-        \end{enumalph}
-
-        \item The provision of ATS surveillance services shall be limited to specified areas of coverage and shall be subject to such other limitations as have been specified by the appropriate ATS authority. Adequate information on the operating methods used shall be published in aeronautical information publications, as well as operating practices and/or equipment limitations having direct effects on the operation of the air traffic services.
+        \item \textit{Aircraft maintaining a level.} An aircraft is considered to be maintaining its assigned level as long as the pressure-altitude-derived level information indicates that it is within the appropriate tolerances of the assigned level, as specified in 8.5.5.2.1.
+        \item \textit{Aircraft vacating a level.} An aircraft cleared to leave a level is considered to have commenced its manoeuvre and vacated the previously occupied level when the pressure-altitude-derived level information indicates a change of more than 300 ft in the anticipated direction from its previously assigned level.
+        \item \textit{Aircraft passing a level in climb or descent.} An aircraft in climb or descent is considered to have crossed a level when the pressure-altitude-derived level information indicates that it has passed this level in the required direction by more than 300 ft.
         %References
-        \note{States will provide information on the area or areas where PSR, SSR, ADS-B and MLAT systems are in use as well as ATS surveillance services and procedures in accordance with Annex 15, 4.1.1 and Appendix 1.}
-
-        \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic{enumi}.\arabic*]
-            \item The provision of ATS surveillance services shall be limited when position data quality degrades below a level specified by the appropriate ATS authority.
-        \end{enumerate}
-
-        \item Where PSR and SSR are required to be used in combination, SSR alone may be used in the event of PSR failure to provide separation between identified transponder-equipped aircraft, provided the accuracy of the SSR position indications has been verified by monitor equipment or other means.
+        \item \textit{Aircraft reaching a level.} An aircraft is considered to have reached the level to which it has been cleared when the elapsed time of three display updates, three sensor updates or 15 seconds, whichever is the greater, has passed since the pressure-altitude-derived level information has indicated that it is within the appropriate tolerances of the assigned level, as specified in 8.5.5.2.1.
+        \item Intervention by a controller shall only be required if differences in level information between that displayed to the controller and that used for control purposes are in excess of the values stated above.
     \end{enumerate}
+\end{enumeratesc}
 
-    \subsection[Situation display]{SITUATION DISPLAY}
+\subsection[General procedures]{GENERAL PROCEDURES}
 
-    \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
-        \item A situation display providing surveillance information to the controller shall, as a minimum, include position indications, map information required to provide ATS surveillance services and, where available, information concerning the identity of the aircraft and the aircraft level.
-        \item The ATS surveillance system shall provide for a continuously updated presentation of surveillance information, including position indications.
-        \item Position indications may be displayed as:
+%Numbering
+% 8.6.1
 
-        \begin{enumalph}
-            \item individual position symbols, e.g. PSR, SSR, ADS-B or MLAT symbols, or combined symbols;
-            \item PSR blips; and
-            \item SSR responses.
-        \end{enumalph}
+\subsubsection{Identification of aircraft}
 
-        \item When applicable, distinct symbols should be used for presentation of:
-
-        \begin{enumalph}
-            \item unintentionally duplicated SSR codes and/or aircraft identification that are unintentionally duplicated;
-            \item predicted positions for a non-updated track; and
-            \item plot and track data.
-        \end{enumalph}
-
-        \item Where surveillance data quality degrades such that services need to be limited, symbology or other means shall be used to provide the controller with an indication of the condition.
-        \item Reserved SSR codes, including 7500, 7600 and 7700, operation of IDENT, ADS-B emergency and/or urgency modes, safety-related alerts and warnings as well as information related to automated coordination shall be presented in a clear and distinct manner, providing for ease of recognition.
-        \item Labels associated with displayed targets should be used to provide, in alphanumeric form, information derived from the means of surveillance and, where necessary, the flight data processing system.
-        \item Labels shall, as a minimum, include information relating to the identity of the aircraft, e.g. SSR code or aircraft identification and, if available, pressure-altitude-derived level information. This information may be obtained from SSR Mode A, SSR Mode C, SSR Mode S and/or ADS-B.
-        \item Labels shall be associated with their position indications in a manner precluding erroneous identification by or confusion on the part of the controller. All label information shall be presented in a clear and concise manner.
-    \end{enumerate}
-
-    \subsection[Communications]{COMMUNICATIONS}
-
-    \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
-        \item The level of reliability and availability of communications systems shall be such that the possibility of system failures or significant degradations is very remote. Adequate backup facilities shall be provided.
-        \note{Guidance material and information pertaining to system reliability and availability are contained in Annex 10, Volume I, and the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
-        \item Direct pilot-controller communications shall be established prior to the provision of ATS surveillance services, unless special circumstances, such as emergencies, dictate otherwise.
-    \end{enumerate}
-
-    \subsection[Provision of ATS surveillance services]{PROVISION OF ATS SURVEILLANCE SERVICES}
-
-    \begin{enumerate}[label=\arabic{section}.\arabic{subsection}.\arabic*]
-        \item Information derived from ATS surveillance systems, including safety-related alerts and warnings such as conflict alert and minimum safe altitude warning, should be used to the extent possible in the provision of air traffic control service in order to improve capacity and efficiency as well as to enhance safety.
-        \item The number of aircraft simultaneously provided with ATS surveillance services shall not exceed that which can safely be handled under the prevailing circumstances, taking into account:
-
-        \begin{enumalph}
-            \item the structural complexity of the control area or sector concerned;
-            \item the functions to be performed within the control area or sector concerned;
-            \item assessments of controller workloads, taking into account different aircraft capabilities, and sector capacity; and
-            \item the degree of technical reliability and availability of the primary and backup communications, navigation and surveillance systems, both in the aircraft and on the ground.
-        \end{enumalph}
-    \end{enumerate}
-
-    \subsection[Use of SSR transponders and ADS-B transmitters]{USE OF SSR TRANSPONDERS AND ADS-B TRANSMITTERS}
-
-    \subsubsection{General}
-
-    To ensure the safe and efficient use of ATS surveillance services, pilots and controllers shall strictly adhere to published operating procedures and standard radiotelephony phraseology shall be used. The correct setting of transponder codes and/or aircraft identification shall be ensured at all times.
-
-    \subsubsection{SSR code management}
-
+\begin{enumeratesc}
+    \item \textsc{Establishment of identification}
     \begin{enumerate}
-        \item Codes 7700, 7600 and 7500 shall be reserved internationally for use by pilots encountering a state of emergency, radiocommunication failure or unlawful interference, respectively.
-
-        % 8.5.2.2
-        % 8.5.2.3
-    \end{enumerate}
-
-    \subsubsection{Operation of SSR transponders}
-
-    \begin{enumempty}[labelindent=\parindent]
-        \item \note{SSR transponder operating procedures are contained in \emph{Procedures for Air Navigation Services — Aircraft Operations} (PANS-OPS, Doc 8168), Volume I, Part III, Section 3.}
-    \end{enumempty}
-
-    \begin{enumerate}
-        \item When it is observed that the Mode A code shown on the situation display is different to what has been assigned to the aircraft, the pilot shall be requested to confirm the code selected and, if the situation warrants (e.g. not being a case of unlawful interference), to reselect the correct code.
-        \item If the discrepancy between assigned and displayed Mode A codes still persists, the pilot may be requested to stop the operation of the aircraft’s transponder. The next control position and any other affected unit using SSR and/or MLAT in the provision of ATS shall be informed accordingly.
-        %Review
-        \item Aircraft equipped with Mode S having an aircraft identification feature shall transmit the aircraft identification as specified in Item 7 of the ICAO flight plan or, when no flight plan has been filed, the aircraft registration.
-        \note{All Mode S-equipped aircraft engaged in international civil aviation are required to have an aircraft identification feature (Annex 10, Volume IV, Chapter 2, 2.1.5.2, refers).}
-        \item Whenever it is observed on the situation display that the aircraft identification transmitted by a Mode S-equipped aircraft is different from that expected from the aircraft, the pilot shall be requested to confirm and, if necessary, re-enter the correct aircraft identification.
-        \item If, following confirmation by the pilot that the correct aircraft identification has been set on the Mode S identification feature, the discrepancy continues to exist, the following actions shall be taken by the controller:
-
-        \begin{enumalph}
-            \item inform the pilot of the persistent discrepancy;
-            \item where possible, correct the label showing the aircraft identification on the situation display; and
-            \item notify the erroneous aircraft identification transmitted by the aircraft to the next control position and any other interested unit using Mode S for identification purposes.
-        \end{enumalph}
-    \end{enumerate}
-
-    \subsubsection{Operation of ADS-B transmitters}
-
-    \begin{enumempty}[labelindent=\parindent]
-        \item \note[1]{To indicate that it is in a state of emergency or to transmit other urgent information, an aircraft equipped with ADS-B might operate the emergency and/or urgency mode as follows: \begin{enumalph} \item emergency; \item communication failure; \item unlawful interference; \item minimum fuel; and/or \item medical. \end{enumalph}}
+        \item Before providing an ATS surveillance service to an aircraft, identification shall be established and the pilot informed. Thereafter, identification shall be maintained until termination of the ATS surveillance service.
+        \item If identification is subsequently lost, the pilot shall be informed accordingly and, when applicable, appropriate instructions issued.
         %References
-        \item \note[2]{Some aircraft equipped with first generation ADS-B avionics do not have the capability described in Note 1 above and only have the capability to transmit a general emergency alert regardless of the code selected by the pilot.}
-    \end{enumempty}
-
-    \begin{enumerate}
-        %Review
-        \item Aircraft equipped with ADS-B having an aircraft identification feature shall transmit the aircraft identification as specified in Item 7 of the ICAO flight plan or, when no flight plan has been filed, the aircraft registration.
-        \item Whenever it is observed on the situation display that the aircraft identification transmitted by an ADS-B-equipped aircraft is different from that expected from the aircraft, the pilot shall be requested to confirm and, if necessary, re-enter the correct aircraft identification.
-        \item If, following confirmation by the pilot that the correct aircraft identification has been set on the ADS-B identification feature, the discrepancy continues to exist, the following actions shall be taken by the controller:
-
-        \begin{enumalph}
-            \item inform the pilot of the persistent discrepancy;
-            \item where possible, correct the label showing the aircraft identification on the situation display; and
-            \item notify the next control position and any other unit concerned of the erroneous aircraft identification transmitted by the aircraft.
-        \end{enumalph}
+        \item Identification shall be established by at least one of the methods specified in 8.6.2.2, 8.6.2.3, 8.6.2.4 and 8.6.2.5.
     \end{enumerate}
 
-    \subsubsection[Level information based on the use of pressure-altitude information]{Level information based on the \\ use of pressure-altitude information}
-
-    \begin{enumeratesc}
-        \item \textsc{Verification of level information}
-        \begin{enumerate}
-            \item The tolerance value used to determine that pressure-altitude-derived level information displayed to the controller is accurate shall be $\pm$200 ft in RVSM airspace. In other airspace, it shall be $\pm$300 ft, except that the appropriate ATS authority may specify a smaller criterion, but not less than $\pm$200 ft, if this is found to be more practical. Geometric height information shall not be used for separation.
-            \item Verification of pressure-altitude-derived level information displayed to the controller shall be effected at least once by each suitably equipped ATC unit on initial contact with the aircraft concerned or, if this is not feasible, as soon as possible thereafter. The verification shall be effected by simultaneous comparison with altimeter-derived level information received from the same aircraft by radiotelephony. The pilot of the aircraft whose pressure-altitude-derived level information is within the approved tolerance value need not be advised of such verification. Geometric height information shall not be used to determine if altitude differences exist.
-            \item If the displayed level information is not within the approved tolerance value or when a discrepancy in excess of the approved tolerance value is detected subsequent to verification, the pilot shall be advised accordingly and requested to check the pressure setting and confirm the aircraft’s level.
-            \item If, following confirmation of the correct pressure setting the discrepancy continues to exist, the following action should be taken according to circumstances:
-
-            \begin{enumalph}
-                \item request the pilot to stop Mode C or ADS-B altitude data transmission, provided this does not cause the loss of position and identity information, and notify the next control positions or ATC unit concerned with the aircraft of the action taken; or
-                \item inform the pilot of the discrepancy and request that the relevant operation continue in order to prevent loss of position and identity information of the aircraft and, when authorized by the appropriate ATS authority, override the label-displayed level information with the reported level. Notify the next control position or ATC unit concerned with the aircraft of the action taken.
-            \end{enumalph}
-        \end{enumerate}
-
-        \item \textsc{Determination of level occupancy}
-        \begin{enumerate}
-            \item The criterion which shall be used to determine that a specific level is occupied by an aircraft shall be $\pm$200 ft in RVSM airspace. In other airspace, it shall be $\pm$300 ft, except that the appropriate ATS authority may specify a smaller criterion, but not less than $\pm$200 ft, if this is found to be more practical.
-            \note{For a brief explanation of the considerations underlying this value, see the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
-            %References
-            \item \textit{Aircraft maintaining a level.} An aircraft is considered to be maintaining its assigned level as long as the pressure-altitude-derived level information indicates that it is within the appropriate tolerances of the assigned level, as specified in 8.5.5.2.1.
-            \item \textit{Aircraft vacating a level.} An aircraft cleared to leave a level is considered to have commenced its manoeuvre and vacated the previously occupied level when the pressure-altitude-derived level information indicates a change of more than 300 ft in the anticipated direction from its previously assigned level.
-            \item \textit{Aircraft passing a level in climb or descent.} An aircraft in climb or descent is considered to have crossed a level when the pressure-altitude-derived level information indicates that it has passed this level in the required direction by more than 300 ft.
-            %References
-            \item \textit{Aircraft reaching a level.} An aircraft is considered to have reached the level to which it has been cleared when the elapsed time of three display updates, three sensor updates or 15 seconds, whichever is the greater, has passed since the pressure-altitude-derived level information has indicated that it is within the appropriate tolerances of the assigned level, as specified in 8.5.5.2.1.
-            \item Intervention by a controller shall only be required if differences in level information between that displayed to the controller and that used for control purposes are in excess of the values stated above.
-        \end{enumerate}
-    \end{enumeratesc}
-
-    \subsection[General procedures]{GENERAL PROCEDURES}
+    \item \textsc{ADS-B identification procedures}
+    \begin{enumempty}
+        \item Where ADS-B is used for identification, aircraft may be identified by one or more of the following procedures:
+    \end{enumempty}
+    \begin{enumalph}
+        \item direct recognition of the aircraft identification in an ADS-B label;
+        %References
+        \item transfer of ADS-B identification (see 8.6.3); and
+        \item observation of compliance with an instruction to TRANSMIT ADS-B IDENT.
+        \note[1]{Some aircraft equipped with first generation ADS-B avionics do not have the capability of squawking IDENT while the emergency and/or urgency mode is selected.}
+        \note[2]{In automated systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
+    \end{enumalph}
     
-    %Numbering
-    % 8.6.1
-
-    \subsubsection{Identification of aircraft}
-    
-    \begin{enumeratesc}
-    	\item \textsc{Establishment of identification}
-    	\begin{enumerate}
-    		\item Before providing an ATS surveillance service to an aircraft, identification shall be established and the pilot informed. Thereafter, identification shall be maintained until termination of the ATS surveillance service.
-    		\item If identification is subsequently lost, the pilot shall be informed accordingly and, when applicable, appropriate instructions issued.
-    		%References
-    		\item Identification shall be established by at least one of the methods specified in 8.6.2.2, 8.6.2.3, 8.6.2.4 and 8.6.2.5.
-    	\end{enumerate}
-    
-    	\item \textsc{ADS-B identification procedures}
-    	\begin{enumempty}
-    		\item Where ADS-B is used for identification, aircraft may be identified by one or more of the following procedures:
-    	\end{enumempty}
-    	\begin{enumalph}
-    		\item direct recognition of the aircraft identification in an ADS-B label;
-    		%References
-    		\item transfer of ADS-B identification (see 8.6.3); and
-    		\item observation of compliance with an instruction to TRANSMIT ADS-B IDENT.
-    		\note[1]{Some aircraft equipped with first generation ADS-B avionics do not have the capability of squawking IDENT while the emergency and/or urgency mode is selected.}
-    		\note[2]{In automated systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
-    	\end{enumalph}
-    	
-    	\item \textsc{SSR and/or MLAT identification procedures}
-    	\begin{enumerate}
-    		\item Where SSR and/or MLAT is used for identification, aircraft may be identified by one or more of the following procedures:
-    		
-    		\begin{enumalph}
-    			\item recognition of the aircraft identification in an SSR and/or MLAT label;
-    			%References
-    			\note{The use of this procedure requires that the code/call sign correlation is achieved successfully, taking into account the Note following b) below.}
-    			\item recognition of an assigned discrete code, the setting of which has been verified, in an SSR and/or MLAT label;
-    			%References
-    			\note{The use of this procedure requires a system of code assignment which ensures that each aircraft in a given portion of airspace is assigned a discrete code (see 8.5.2.2.7).}
-    			\item direct recognition of the aircraft identification of a Mode S-equipped aircraft in an SSR and/or MLAT label;
-    			\note{The aircraft identification feature available in Mode S transponders provides the means to identify directly individual aircraft on situation displays and thus offers the potential to eliminate ultimately the recourse to Mode A discrete codes for individual identification. This elimination will only be achieved in a progressive manner depending on the state of deployment of suitable ground and airborne installations.}
-    			%References
-    			\item by transfer of identification (see 8.6.3);
-    			\item observation of compliance with an instruction to set a specific code;
-    			\item observation of compliance with an instruction to squawk IDENT.
-    			\note[1]{In automated radar systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
-    			\note[2]{Garbling of transponder replies may produce “IDENT”-type of indications. Nearly simultaneous “IDENT” transmissions within the same area may give rise to errors in identification.}
-    		\end{enumalph}
-    		
-    		\item When a discrete code has been assigned to an aircraft, a check shall be made at the earliest opportunity to ensure that the code set by the pilot is identical to that assigned for the flight. Only after this check has been made shall the discrete code be used as a basis for identification.
-    	\end{enumerate}
-    
-    	\item \textsc{PSR identification procedures}
-    	\begin{enumerate}
-    		\item Where PSR is used for identification, aircraft may be identified by one or more of the following procedures:
-    		
-    		\begin{enumalph}
-    			\item by correlating a particular radar position indication with an aircraft reporting its position over, or as bearing and distance from, a point shown on the situation display, and by ascertaining that the track of the particular radar position is consistent with the aircraft path or reported heading;
-    			\note[1]{Caution must be exercised when employing this method since a position reported in relation to a point may not coincide precisely with the radar position indication of the aircraft on the situation display. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.: \begin{enumerate}[label=\roman*),leftmargin=*,labelsep=0pt,labelindent=0pt] \item a level or levels above which this method may not be applied in respect of specified navigation aids; or \item a distance from the radar site beyond which this method may not be applied. \end{enumerate}}
-    			\note[2]{The term “a point” refers to a geographical point suitable for the purposes of identification. It is normally a reporting point defined by reference to a radio navigation aid or aids.}
-    			\item by correlating an observed radar position indication with an aircraft which is known to have just departed, provided that the identification is established within 1 NM from the end of the runway used. Particular care should be taken to avoid confusion with aircraft holding over or overflying the aerodrome, or with aircraft departing from or making a missed approach over adjacent runways;
-    			%References
-    			\item by transfer of identification (see 8.6.3);
-    			\item by ascertaining the aircraft heading, if circumstances require, and following a period of track observation:
-    			
-    			\begin{enumerate}[label=---,labelsep=0.3cm,leftmargin=*,labelindent=0pt]
-    				\item instructing the pilot to execute one or more changes of heading of 30 degrees or more and correlating the movements of one particular radar position indication with the aircraft’s acknowledged execution of the instructions given; or
-    				\item correlating the movements of a particular radar position indication with manoeuvres currently executed by an aircraft having so reported.
-    			\end{enumerate}
-    			
-    			\noindent When using these methods, the controller shall:
-    			
-    			\begin{enumerate}[label=\roman*),labelsep=0pt,leftmargin=*,labelindent=0pt]
-    				\item verify that the movements of not more than one radar position indication correspond with those of the aircraft; and
-    				\item ensure that the manoeuvre(s) will not carry the aircraft outside the coverage of the radar or the situation display.
-    			\end{enumerate}
-    		
-    			\note[1]{Caution must be exercised when employing these methods in areas where route changes normally take place.}
-    			%References
-    			\note[2]{With reference to ii) above, see also 8.6.5.1 regarding vectoring of controlled aircraft.}
-    		\end{enumalph}
-    	
-    		\item Use may be made of direction-finding bearings to assist in identification of an aircraft. This method, however, shall not be used as the sole means of establishing identification, unless so prescribed by the appropriate ATS authority for particular cases under specified conditions.
-    	\end{enumerate}
-    
-    	\item \textsc{Additional identification method}
-    	\begin{enumempty}
-    		\item When two or more position indications are observed in close proximity, or are observed to be making similar movements at the same time, or when doubt exists as to the identity of a position indication for any other reason, changes of heading should be prescribed or repeated as many times as necessary, or additional methods of identification should be employed, until all risk of error in identification is eliminated.
-    	\end{enumempty}    
-    \end{enumeratesc}
-
-    \subsubsection{Transfer of identification}
-
+    \item \textsc{SSR and/or MLAT identification procedures}
     \begin{enumerate}
-        \item Transfer of identification from one controller to another should only be attempted when it is considered that the aircraft is within the accepting controller’s surveillance coverage.
-        \item Transfer of identification shall be effected by one of the following methods:
+        \item Where SSR and/or MLAT is used for identification, aircraft may be identified by one or more of the following procedures:
         
         \begin{enumalph}
-            \item designation of the position indication by automated means, provided that only one position indication is thereby indicated and there is no possible doubt of correct identification;
-            \item notification of the aircraft’s discrete SSR code or aircraft address;
+            \item recognition of the aircraft identification in an SSR and/or MLAT label;
             %References
-            \note[1]{The use of a discrete SSR code requires a system of code assignment which ensures that each aircraft in a given portion of airspace is assigned a discrete code (see 8.5.2.2.7).}
-            \note[2]{Aircraft address would be expressed in the form of the alphanumerical code of six hexadecimal characters.}
-            \item notification that the aircraft is SSR Mode S-equipped with an aircraft identification feature when SSR Mode S coverage is available;
-            \item notification that the aircraft is ADS-B-equipped with an aircraft identification feature when compatible ADS-B coverage is available;
-            \item direct designation (pointing with the finger) of the position indication, if the two situation displays are adjacent, or if a common “conference” type of situation display is used;
-            \note{Attention must be given to any errors which might occur due to parallax effects.}
-            \item designation of the position indication by reference to, or in terms of bearing and distance from, a geographical position or navigational facility accurately indicated on both situation displays, together with the track of the observed position indication if the route of the aircraft is not known to both controllers;
-            \note{Caution must be exercised before transferring identification using this method, particularly if other position indications are observed on similar headings and in close proximity to the aircraft under control. Inherent radar deficiencies, such as inaccuracies in bearing and distance of the radar position indications displayed on individual situation displays and parallax errors, may cause the indicated position of an aircraft in relation to the known point to differ between the two situation displays. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.: \begin{enumerate}[label=\roman*),leftmargin=*,labelsep=0pt,labelindent=0pt] \item a maximum distance from the common reference point used by the two controllers; and \item a maximum distance between the position indication as observed by the accepting controller and the one stated by the transferring controller. \end{enumerate}}
-            \item where applicable, issuance of an instruction to the aircraft by the transferring controller to change SSR code and the observation of the change by the accepting controller; or
-            \item issuance of an instruction to the aircraft by the transferring controller to squawk/transmit IDENT and observation of this response by the accepting controller.
+            \note{The use of this procedure requires that the code/call sign correlation is achieved successfully, taking into account the Note following b) below.}
+            \item recognition of an assigned discrete code, the setting of which has been verified, in an SSR and/or MLAT label;
             %References
-            \note{Use of procedures g) and h) requires prior coordination between the controllers, since the indications to be observed by the accepting controller are of short duration.}
+            \note{The use of this procedure requires a system of code assignment which ensures that each aircraft in a given portion of airspace is assigned a discrete code (see 8.5.2.2.7).}
+            \item direct recognition of the aircraft identification of a Mode S-equipped aircraft in an SSR and/or MLAT label;
+            \note{The aircraft identification feature available in Mode S transponders provides the means to identify directly individual aircraft on situation displays and thus offers the potential to eliminate ultimately the recourse to Mode A discrete codes for individual identification. This elimination will only be achieved in a progressive manner depending on the state of deployment of suitable ground and airborne installations.}
+            %References
+            \item by transfer of identification (see 8.6.3);
+            \item observation of compliance with an instruction to set a specific code;
+            \item observation of compliance with an instruction to squawk IDENT.
+            \note[1]{In automated radar systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
+            \note[2]{Garbling of transponder replies may produce “IDENT”-type of indications. Nearly simultaneous “IDENT” transmissions within the same area may give rise to errors in identification.}
         \end{enumalph}
+        
+        \item When a discrete code has been assigned to an aircraft, a check shall be made at the earliest opportunity to ensure that the code set by the pilot is identical to that assigned for the flight. Only after this check has been made shall the discrete code be used as a basis for identification.
     \end{enumerate}
 
+    \item \textsc{PSR identification procedures}
+    \begin{enumerate}
+        \item Where PSR is used for identification, aircraft may be identified by one or more of the following procedures:
+        
+        \begin{enumalph}
+            \item by correlating a particular radar position indication with an aircraft reporting its position over, or as bearing and distance from, a point shown on the situation display, and by ascertaining that the track of the particular radar position is consistent with the aircraft path or reported heading;
+            \note[1]{Caution must be exercised when employing this method since a position reported in relation to a point may not coincide precisely with the radar position indication of the aircraft on the situation display. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.: \begin{enumerate}[label=\roman*),leftmargin=*,labelsep=0pt,labelindent=0pt] \item a level or levels above which this method may not be applied in respect of specified navigation aids; or \item a distance from the radar site beyond which this method may not be applied. \end{enumerate}}
+            \note[2]{The term “a point” refers to a geographical point suitable for the purposes of identification. It is normally a reporting point defined by reference to a radio navigation aid or aids.}
+            \item by correlating an observed radar position indication with an aircraft which is known to have just departed, provided that the identification is established within 1 NM from the end of the runway used. Particular care should be taken to avoid confusion with aircraft holding over or overflying the aerodrome, or with aircraft departing from or making a missed approach over adjacent runways;
+            %References
+            \item by transfer of identification (see 8.6.3);
+            \item by ascertaining the aircraft heading, if circumstances require, and following a period of track observation:
+            
+            \begin{enumerate}[label=---,labelsep=0.3cm,leftmargin=*,labelindent=0pt]
+                \item instructing the pilot to execute one or more changes of heading of 30 degrees or more and correlating the movements of one particular radar position indication with the aircraft’s acknowledged execution of the instructions given; or
+                \item correlating the movements of a particular radar position indication with manoeuvres currently executed by an aircraft having so reported.
+            \end{enumerate}
+            
+            \noindent When using these methods, the controller shall:
+            
+            \begin{enumerate}[label=\roman*),labelsep=0pt,leftmargin=*,labelindent=0pt]
+                \item verify that the movements of not more than one radar position indication correspond with those of the aircraft; and
+                \item ensure that the manoeuvre(s) will not carry the aircraft outside the coverage of the radar or the situation display.
+            \end{enumerate}
+        
+            \note[1]{Caution must be exercised when employing these methods in areas where route changes normally take place.}
+            %References
+            \note[2]{With reference to ii) above, see also 8.6.5.1 regarding vectoring of controlled aircraft.}
+        \end{enumalph}
+    
+        \item Use may be made of direction-finding bearings to assist in identification of an aircraft. This method, however, shall not be used as the sole means of establishing identification, unless so prescribed by the appropriate ATS authority for particular cases under specified conditions.
+    \end{enumerate}
 
+    \item \textsc{Additional identification method}
+    \begin{enumempty}
+        \item When two or more position indications are observed in close proximity, or are observed to be making similar movements at the same time, or when doubt exists as to the identity of a position indication for any other reason, changes of heading should be prescribed or repeated as many times as necessary, or additional methods of identification should be employed, until all risk of error in identification is eliminated.
+    \end{enumempty}    
+\end{enumeratesc}
 
-\end{document}
+\subsubsection{Transfer of identification}
+
+\begin{enumerate}
+    \item Transfer of identification from one controller to another should only be attempted when it is considered that the aircraft is within the accepting controller’s surveillance coverage.
+    \item Transfer of identification shall be effected by one of the following methods:
+    
+    \begin{enumalph}
+        \item designation of the position indication by automated means, provided that only one position indication is thereby indicated and there is no possible doubt of correct identification;
+        \item notification of the aircraft’s discrete SSR code or aircraft address;
+        %References
+        \note[1]{The use of a discrete SSR code requires a system of code assignment which ensures that each aircraft in a given portion of airspace is assigned a discrete code (see 8.5.2.2.7).}
+        \note[2]{Aircraft address would be expressed in the form of the alphanumerical code of six hexadecimal characters.}
+        \item notification that the aircraft is SSR Mode S-equipped with an aircraft identification feature when SSR Mode S coverage is available;
+        \item notification that the aircraft is ADS-B-equipped with an aircraft identification feature when compatible ADS-B coverage is available;
+        \item direct designation (pointing with the finger) of the position indication, if the two situation displays are adjacent, or if a common “conference” type of situation display is used;
+        \note{Attention must be given to any errors which might occur due to parallax effects.}
+        \item designation of the position indication by reference to, or in terms of bearing and distance from, a geographical position or navigational facility accurately indicated on both situation displays, together with the track of the observed position indication if the route of the aircraft is not known to both controllers;
+        \note{Caution must be exercised before transferring identification using this method, particularly if other position indications are observed on similar headings and in close proximity to the aircraft under control. Inherent radar deficiencies, such as inaccuracies in bearing and distance of the radar position indications displayed on individual situation displays and parallax errors, may cause the indicated position of an aircraft in relation to the known point to differ between the two situation displays. The appropriate ATS authority may, therefore, prescribe additional conditions for the application of this method, e.g.: \begin{enumerate}[label=\roman*),leftmargin=*,labelsep=0pt,labelindent=0pt] \item a maximum distance from the common reference point used by the two controllers; and \item a maximum distance between the position indication as observed by the accepting controller and the one stated by the transferring controller. \end{enumerate}}
+        \item where applicable, issuance of an instruction to the aircraft by the transferring controller to change SSR code and the observation of the change by the accepting controller; or
+        \item issuance of an instruction to the aircraft by the transferring controller to squawk/transmit IDENT and observation of this response by the accepting controller.
+        %References
+        \note{Use of procedures g) and h) requires prior coordination between the controllers, since the indications to be observed by the accepting controller are of short duration.}
+    \end{enumalph}
+\end{enumerate}

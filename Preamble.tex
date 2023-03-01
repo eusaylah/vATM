@@ -12,7 +12,7 @@
 \usepackage{fancyhdr}
 \usepackage{tocloft}
 
-\usepackage{subfiles}
+%\usepackage{subfiles}
 
 
 % ----- Title ----- %
@@ -87,32 +87,41 @@
 
 
 % ----- Commands ----- %
+\newcommand{\chapterbegin}{%
+	\clearpage
+	\thispagestyle{1page}
+}
+
+\newcommand{\checkspace}{%
+	\ifdim\dimexpr\pagegoal-\pagetotal>1.3cm%
+		1%
+	\else%
+		0%
+	\fi%
+}
+
+\newcommand{\chapterend}{%
+	\ifnum\checkspace=1%
+		\vspace*{1cm}%
+	\else%
+		\vfill%
+	\fi%
+	\begin{center}%
+		--------------------------------------------------%
+	\end{center}%
+	\newpage%
+}
+
 \newcommand{\note}[2][\empty]{%
 	\ifx#1\empty%
 		\par\textit{Note --- #2}\par%
 	\else%
 		\par\textit{Note #1 --- #2}\par%
 	\fi%
-}%
-
-\newcommand{\checkspace}{%
-	\ifdim\dimexpr\pagegoal-\pagetotal>1.3cm
-	1
-	\else
-	0
-	\fi
 }
 
-\newcommand{\chapterend}{%
-	\ifnum\checkspace=1
-	\vspace*{1cm}
-	\else
-	\vfill
-	\fi
-	\begin{center}
-		--------------------------------------------------%
-	\end{center}
-	\newpage
+\newcommand{\nosssection}{%
+	[label=\arabic{section}.\arabic{subsection}.\arabic*]%
 }
 
 \newenvironment{enumeratesc}{\begin{enumerate}[itemsep=0.2cm]\centering}{\end{enumerate}}
