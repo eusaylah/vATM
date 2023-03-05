@@ -11,6 +11,10 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tocloft}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{makecell}
 
 %\usepackage{subfiles}
 
@@ -65,6 +69,10 @@
 \counterwithin{figure}{section}
 \renewcommand\thefigure{\arabic{section}-\arabic{figure}}
 
+
+%\renewcommand{\arraystretch}{1.5}
+%\newcounter{rowcount}
+%\newcolumntype{I}{>{\ifnum\value{rowcount}<5\itshape\fi\stepcounter{rowcount}}c}
 
 % ----- Table of Contents setup ----- %
 \renewcommand\contentsname{TABLE OF CONTENTS}
@@ -136,3 +144,5 @@
 \newenvironment{enumromannosep}{\begin{enumroman}[labelsep=0cm,parsep=0pt]}{\end{enumroman}}
 
 \newenvironment{noteev}{\itshape}{\normalfont}
+
+\newenvironment{tablecenter}[1]{\begin{center}\begin{tabular}{#1}}{\end{tabular}\end{center}}
