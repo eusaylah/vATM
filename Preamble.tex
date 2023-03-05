@@ -122,10 +122,11 @@
 }
 
 \newcommand{\note}[2][\empty]{%
+	\ifhmode\par\else\noindent\indent\fi%
 	\ifx#1\empty%
-		\par\textit{Note --- #2}\par%
+		\textit{Note --- #2}\par%
 	\else%
-		\par\textit{Note #1 --- #2}\par%
+		\textit{Note #1 --- #2}\par%
 	\fi%
 }
 
