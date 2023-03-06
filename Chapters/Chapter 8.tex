@@ -186,14 +186,12 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
 
     \item \textsc{Determination of level occupancy}
     \begin{enumerate}
-        \item The criterion which shall be used to determine that a specific level is occupied by an aircraft shall be $\pm$200 ft in RVSM airspace. In other airspace, it shall be $\pm$300 ft, except that the appropriate ATS authority may specify a smaller criterion, but not less than $\pm$200 ft, if this is found to be more practical.
+        \item \label{8.5.5.2.1} The criterion which shall be used to determine that a specific level is occupied by an aircraft shall be $\pm$200 ft in RVSM airspace. In other airspace, it shall be $\pm$300 ft, except that the appropriate ATS authority may specify a smaller criterion, but not less than $\pm$200 ft, if this is found to be more practical.
         \note{For a brief explanation of the considerations underlying this value, see the \emph{Air Traffic Services Planning Manual} (Doc 9426).}
-        %References
-        \item \textit{Aircraft maintaining a level.} An aircraft is considered to be maintaining its assigned level as long as the pressure-altitude-derived level information indicates that it is within the appropriate tolerances of the assigned level, as specified in 8.5.5.2.1.
+        \item \textit{Aircraft maintaining a level.} An aircraft is considered to be maintaining its assigned level as long as the pressure-altitude-derived level information indicates that it is within the appropriate tolerances of the assigned level, as specified in \ref{8.5.5.2.1}.
         \item \textit{Aircraft vacating a level.} An aircraft cleared to leave a level is considered to have commenced its manoeuvre and vacated the previously occupied level when the pressure-altitude-derived level information indicates a change of more than 300 ft in the anticipated direction from its previously assigned level.
         \item \textit{Aircraft passing a level in climb or descent.} An aircraft in climb or descent is considered to have crossed a level when the pressure-altitude-derived level information indicates that it has passed this level in the required direction by more than 300 ft.
-        %References
-        \item \textit{Aircraft reaching a level.} An aircraft is considered to have reached the level to which it has been cleared when the elapsed time of three display updates, three sensor updates or 15 seconds, whichever is the greater, has passed since the pressure-altitude-derived level information has indicated that it is within the appropriate tolerances of the assigned level, as specified in 8.5.5.2.1.
+        \item \textit{Aircraft reaching a level.} An aircraft is considered to have reached the level to which it has been cleared when the elapsed time of three display updates, three sensor updates or 15 seconds, whichever is the greater, has passed since the pressure-altitude-derived level information has indicated that it is within the appropriate tolerances of the assigned level, as specified in \ref{8.5.5.2.1}.
         \item Intervention by a controller shall only be required if differences in level information between that displayed to the controller and that used for control purposes are in excess of the values stated above.
     \end{enumerate}
 \end{enumeratesc}
@@ -210,38 +208,34 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
     \begin{enumerate}
         \item Before providing an ATS surveillance service to an aircraft, identification shall be established and the pilot informed. Thereafter, identification shall be maintained until termination of the ATS surveillance service.
         \item If identification is subsequently lost, the pilot shall be informed accordingly and, when applicable, appropriate instructions issued.
-        %References
-        \item Identification shall be established by at least one of the methods specified in 8.6.2.2, 8.6.2.3, 8.6.2.4 and 8.6.2.5.
+        \item Identification shall be established by at least one of the methods specified in \ref{8.6.2.2}, \ref{8.6.2.3}, \ref{8.6.2.4} and \ref{8.6.2.5}.
     \end{enumerate}
 
-    \item \textsc{ADS-B identification procedures}
+    \item \textsc{ADS-B identification procedures} \label{8.6.2.2}
     \begin{enumempty}
         \item Where ADS-B is used for identification, aircraft may be identified by one or more of the following procedures:
     \end{enumempty}
     \begin{enumalph}
         \item direct recognition of the aircraft identification in an ADS-B label;
-        %References
-        \item transfer of ADS-B identification (see 8.6.3); and
+        \item transfer of ADS-B identification (see \ref{8.6.3}); and
         \item observation of compliance with an instruction to TRANSMIT ADS-B IDENT.
         \note[1]{Some aircraft equipped with first generation ADS-B avionics do not have the capability of squawking IDENT while the emergency and/or urgency mode is selected.}
         \note[2]{In automated systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
     \end{enumalph}
     
-    \item \textsc{SSR and/or MLAT identification procedures}
+    \item \textsc{SSR and/or MLAT identification procedures} \label{8.6.2.3}
     \begin{enumerate}
         \item Where SSR and/or MLAT is used for identification, aircraft may be identified by one or more of the following procedures:
         
         \begin{enumalph}
             \item recognition of the aircraft identification in an SSR and/or MLAT label;
-            %References
-            \note{The use of this procedure requires that the code/call sign correlation is achieved successfully, taking into account the Note following b) below.}
-            \item recognition of an assigned discrete code, the setting of which has been verified, in an SSR and/or MLAT label;
+            \note{The use of this procedure requires that the code/call sign correlation is achieved successfully, taking into account the \hyperref[8.6.2.3.1b]{Note following }\ref{8.6.2.3.1b} below.}
+            \item \label{8.6.2.3.1b} recognition of an assigned discrete code, the setting of which has been verified, in an SSR and/or MLAT label;
             %References
             \note{The use of this procedure requires a system of code assignment which ensures that each aircraft in a given portion of airspace is assigned a discrete code (see 8.5.2.2.7).}
             \item direct recognition of the aircraft identification of a Mode S-equipped aircraft in an SSR and/or MLAT label;
             \note{The aircraft identification feature available in Mode S transponders provides the means to identify directly individual aircraft on situation displays and thus offers the potential to eliminate ultimately the recourse to Mode A discrete codes for individual identification. This elimination will only be achieved in a progressive manner depending on the state of deployment of suitable ground and airborne installations.}
-            %References
-            \item by transfer of identification (see 8.6.3);
+            \item by transfer of identification (see \ref{8.6.3});
             \item observation of compliance with an instruction to set a specific code;
             \item observation of compliance with an instruction to squawk IDENT.
             \note[1]{In automated radar systems, the “IDENT” feature may be presented in different ways, e.g. as a flashing of all or part of the position indication and associated label.}
@@ -251,7 +245,7 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
         \item When a discrete code has been assigned to an aircraft, a check shall be made at the earliest opportunity to ensure that the code set by the pilot is identical to that assigned for the flight. Only after this check has been made shall the discrete code be used as a basis for identification.
     \end{enumerate}
 
-    \item \textsc{PSR identification procedures}
+    \item \textsc{PSR identification procedures} \label{8.6.2.4}
     \begin{enumerate}
         \item Where PSR is used for identification, aircraft may be identified by one or more of the following procedures:
         
@@ -268,8 +262,7 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
             \end{noteev}
             
             \item by correlating an observed radar position indication with an aircraft which is known to have just departed, provided that the identification is established within 1 NM from the end of the runway used. Particular care should be taken to avoid confusion with aircraft holding over or overflying the aerodrome, or with aircraft departing from or making a missed approach over adjacent runways;
-            %References
-            \item by transfer of identification (see 8.6.3);
+            \item by transfer of identification (see \ref{8.6.3});
             \item by ascertaining the aircraft heading, if circumstances require, and following a period of track observation:
             
             \begin{enumerate}[label=---,labelsep=0.3cm,leftmargin=*,labelindent=0pt]
@@ -292,13 +285,13 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
         \item Use may be made of direction-finding bearings to assist in identification of an aircraft. This method, however, shall not be used as the sole means of establishing identification, unless so prescribed by the appropriate ATS authority for particular cases under specified conditions.
     \end{enumerate}
 
-    \item \textsc{Additional identification method}
+    \item \textsc{Additional identification method} \label{8.6.2.5}
     \begin{enumempty}
         \item When two or more position indications are observed in close proximity, or are observed to be making similar movements at the same time, or when doubt exists as to the identity of a position indication for any other reason, changes of heading should be prescribed or repeated as many times as necessary, or additional methods of identification should be employed, until all risk of error in identification is eliminated.
     \end{enumempty}    
 \end{enumeratesc}
 
-\subsubsection{Transfer of identification}
+\subsubsection{Transfer of identification} \label{8.6.3}
 
 \begin{enumerate}
     \item Transfer of identification from one controller to another should only be attempted when it is considered that the aircraft is within the accepting controller’s surveillance coverage.
