@@ -115,8 +115,21 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
 
 \begin{enumerate}
     \item Codes 7700, 7600 and 7500 shall be reserved internationally for use by pilots encountering a state of emergency, radiocommunication failure or unlawful interference, respectively.
+    \item SSR codes are to be allocated and assigned in accordance with the following principles.
+    
+    \begin{enumerate}
+        \item Codes should be allocated to States or areas in accordance with regional air navigation agreements, taking into account overlapping radar coverage over adjacent airspaces.
+        %Numbering
+        %8.5.2.2.2
+        %8.5.2.2.3
+        \item The allocation of a code should preclude the use of this code for any other function within the area of coverage of the same SSR for a prescribed time period.
+        \item To reduce pilot and controller workload and the need for controller/pilot communications, the number of code changes required of the pilot should be kept to the minimum.
+        %mbering
+        %8.5.2.2.6
+        \item Where there is a need for individual aircraft identification, each aircraft shall be assigned a discrete code which should, whenever possible, be retained throughout the flight.
+        \item Except for aircraft in a state of emergency, or during communication failure or unlawful interference situations, and unless otherwise agreed by regional air navigation agreement or between a transferring and an accepting ATC unit, the transferring unit shall assign Code A2000 to a controlled flight prior to transfer of communications.
+    \end{enumerate}
 
-    % 8.5.2.2
     % 8.5.2.3
 \end{enumerate}
 
@@ -127,8 +140,7 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
 \begin{enumerate}
     \item When it is observed that the Mode A code shown on the situation display is different to what has been assigned to the aircraft, the pilot shall be requested to confirm the code selected and, if the situation warrants (e.g. not being a case of unlawful interference), to reselect the correct code.
     \item If the discrepancy between assigned and displayed Mode A codes still persists, the pilot may be requested to stop the operation of the aircraft's transponder. The next control position and any other affected unit using SSR and/or MLAT in the provision of ATS shall be informed accordingly.
-    %Review
-    \item Aircraft equipped with Mode S having an aircraft identification feature shall transmit the aircraft identification as specified in Item 7 of the ICAO flight plan or, when no flight plan has been filed, the aircraft registration.
+    \item Aircraft equipped with Mode S having an aircraft identification feature shall transmit the aircraft identification as specified in the flight plan or, when no flight plan has been filed, the aircraft registration.
     \note{All Mode S-equipped aircraft engaged in international civil aviation are required to have an aircraft identification feature (Annex 10, Volume IV, Chapter 2, 2.1.5.2, refers).}
     \item Whenever it is observed on the situation display that the aircraft identification transmitted by a Mode S-equipped aircraft is different from that expected from the aircraft, the pilot shall be requested to confirm and, if necessary, re-enter the correct aircraft identification.
     \item If, following confirmation by the pilot that the correct aircraft identification has been set on the Mode S identification feature, the discrepancy continues to exist, the following actions shall be taken by the controller:
@@ -143,7 +155,7 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
 \subsubsection{Operation of ADS-B transmitters}
 
 \begin{noteev}
-    \note[1]{To indicate that it is in a state of emergency or to transmit other urgent information, an aircraft equipped with ADS-B might operate the emergency and/or urgency mode as follows:}
+    \note[1]{To indicate that it is in a state of emergency or to transmit other urgent information, an aircraft equipped with ADS-B might operate the emergency and/or urgency mode as follows:} \label{8.5.4N1}
     \begin{enumalph}
         \item emergency;
         \item communication failure;
@@ -151,13 +163,11 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
         \item minimum fuel; and/or
         \item medical.
     \end{enumalph}
-    %References
-    \note[2]{Some aircraft equipped with first generation ADS-B avionics do not have the capability described in Note 1 above and only have the capability to transmit a general emergency alert regardless of the code selected by the pilot.}
+    \note[2]{Some aircraft equipped with first generation ADS-B avionics do not have the capability described in \hyperref[8.5.4N1]{Note 1} above and only have the capability to transmit a general emergency alert regardless of the code selected by the pilot.}
 \end{noteev}
 
 \begin{enumerate}
-    %Review
-    \item Aircraft equipped with ADS-B having an aircraft identification feature shall transmit the aircraft identification as specified in Item 7 of the ICAO flight plan or, when no flight plan has been filed, the aircraft registration.
+    \item Aircraft equipped with ADS-B having an aircraft identification feature shall transmit the aircraft identification as specified in the flight plan or, when no flight plan has been filed, the aircraft registration.
     \item Whenever it is observed on the situation display that the aircraft identification transmitted by an ADS-B-equipped aircraft is different from that expected from the aircraft, the pilot shall be requested to confirm and, if necessary, re-enter the correct aircraft identification.
     \item If, following confirmation by the pilot that the correct aircraft identification has been set on the ADS-B identification feature, the discrepancy continues to exist, the following actions shall be taken by the controller:
 
@@ -406,7 +416,7 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
     \begin{enumalph}
         \item established minimum flight altitudes within the area of responsibility;
         %References
-        \item the lowest usable flight level or levels determined in accordance with Chapters 4 and 5; and
+        \item the lowest usable flight level or levels determined in accordance with Chapters \hyperref[4]{4} and 5; and
         \item established minimum altitudes applicable to procedures based on tactical vectoring.
     \end{enumalph}
 
@@ -420,7 +430,7 @@ To ensure the safe and efficient use of ATS surveillance services, pilots and co
 \begin{enumerate}
     \item Information that an aircraft appears likely to penetrate an area of adverse weather should be issued in sufficient time to permit the pilot to decide on an appropriate course of action, including that of requesting advice on how best to circumnavigate the adverse weather area, if so desired.
     \note{Depending on the capabilities of the ATS surveillance system, areas of adverse weather may not be presented on the situation display. An aircraft's weather radar will normally provide better detection and definition of adverse weather than radar sensors in use by ATS.}
-    \item In vectoring an aircraft for circumnavigating any area of adverse weather, the controller should ascertain that the aircraft can be returned to its intended or assigned flight path within the coverage of the ATS surveillance system and, if this does not appear possible, inform the pilot of the circumstances.
+    \item \label{8.6.9.2} In vectoring an aircraft for circumnavigating any area of adverse weather, the controller should ascertain that the aircraft can be returned to its intended or assigned flight path within the coverage of the ATS surveillance system and, if this does not appear possible, inform the pilot of the circumstances.
     \note{Attention must be given to the fact that under certain circumstances the most active area of adverse weather may not be displayed.}
 \end{enumerate}
 
@@ -525,10 +535,24 @@ The information provided by ATS surveillance systems and presented on a situatio
             \item an aircraft is crossing behind another aircraft, at the same altitude or less than 1 000 ft below.
         \end{enumalph}
 
-        %References
-        \note{See Figures 8-1A and 8-1B.}
+        \note{See Figures \ref{fig:8-1} and \ref{fig:8-2}.}
 
         %Figure
+        \vspace{0.5cm}
+        \begin{figure}[!ht]
+            \centering
+            \includegraphics[width=13cm]{Images/Fig 8-1.png}
+            \caption[Operating directly behind]{Operating directly behind (see \ref{8.7.3.4} and \ref{8.7.3.4.1})}
+            \label{fig:8-1}
+        \end{figure}
+
+        \vfill
+        \begin{figure}[!ht]
+            \centering
+            \includegraphics[width=13cm]{Images/Fig 8-2.png}
+            \caption[Crossing behind]{Crossing behind (see \ref{8.7.3.4} and \ref{8.7.3.4.1})}
+            \label{fig:8-2}
+        \end{figure}
     \end{enumerate}
 \end{enumerate}
 
@@ -536,22 +560,20 @@ The information provided by ATS surveillance systems and presented on a situatio
 
 \begin{enumerate}
     \item Where an ATS surveillance service is being provided, transfer of control should be effected, whenever practicable, so as to enable the uninterrupted provision of the ATS surveillance service.
-    \item Where SSR and/or ADS-B and/or MLAT is used and the display of position indications with associated labels is provided for, transfer of control of aircraft between adjacent control positions or between adjacent ATC units may be effected without prior coordination, provided that:
+    \item \label{8.7.4.2} Where SSR and/or ADS-B and/or MLAT is used and the display of position indications with associated labels is provided for, transfer of control of aircraft between adjacent control positions or between adjacent ATC units may be effected without prior coordination, provided that:
     
     \begin{enumalph}
         \item updated flight plan information on the aircraft about to be transferred, including the discrete assigned SSR code or, with respect to Mode S and ADS-B, the aircraft identification, is provided to the accepting controller prior to transfer;
         \item the ATS surveillance system coverage provided to the accepting controller is such that the aircraft concerned is presented on the situation display before the transfer is effected and is identified on, but preferably before, receipt of the initial call;
         \item when the controllers are not physically adjacent, two-way direct speech facilities, which permit communications to be established instantaneously, are available between them at all times;
         \note{``Instantaneous" refers to communications which effectively provide for immediate access between controllers.}
-        \item the transfer point or points and all other conditions of application, such as direction of flight, specified levels, transfer of communication points, and especially an agreed minimum separation between aircraft, including that applicable to succeeding aircraft on the same route, about to be transferred as observed on the situation display, have been made the subject of specific instructions (for intra-unit transfer) or of a specific letter of agreement between two adjacent ATC units;
-        \item the instructions or letter of agreement specify explicitly that the application of this type of transfer of control may be terminated at any time by the accepting controller, normally with an agreed advance notice;
+        \item \label{8.7.4.2d} the transfer point or points and all other conditions of application, such as direction of flight, specified levels, transfer of communication points, and especially an agreed minimum separation between aircraft, including that applicable to succeeding aircraft on the same route, about to be transferred as observed on the situation display, have been made the subject of specific instructions (for intra-unit transfer) or of a specific letter of agreement between two adjacent ATC units;
+        \item \label{8.7.4.2e} the instructions or letter of agreement specify explicitly that the application of this type of transfer of control may be terminated at any time by the accepting controller, normally with an agreed advance notice;
         \item the accepting controller is informed of any level, speed or vectoring instructions given to the aircraft prior to its transfer and which modify its anticipated flight progress at the point of transfer.
     \end{enumalph}
 
-    %References
-    \item The minimum agreed separation between aircraft about to be transferred (8.7.4.2 d) refers) and the advance notice (8.7.4.2 e) refers) shall be determined taking into account all relevant technical, operational and other circumstances. If circumstances arise in which these agreed conditions can no longer be satisfied, controllers shall revert to the procedure in 8.7.4.4 until the situation is resolved.
-    \item Where primary radar is being used, and where another type of ATS surveillance system is employed but the
-    provisions of 8.7.4.2 are not applied, the transfer of control of aircraft between adjacent control positions or between two adjacent ATS units may be effected, provided that:
+    \item The minimum agreed separation between aircraft about to be transferred (\ref{8.7.4.2} \ref{8.7.4.2d} refers) and the advance notice (\ref{8.7.4.2} \ref{8.7.4.2e} refers) shall be determined taking into account all relevant technical, operational and other circumstances. If circumstances arise in which these agreed conditions can no longer be satisfied, controllers shall revert to the procedure in \ref{8.7.4.4} until the situation is resolved.
+    \item \label{8.7.4.4} Where primary radar is being used, and where another type of ATS surveillance system is employed but the provisions of \ref{8.7.4.2} are not applied, the transfer of control of aircraft between adjacent control positions or between two adjacent ATS units may be effected, provided that:
 
     \begin{enumalph}
         \item identification has been transferred to or has been established directly by the accepting controller;
@@ -565,8 +587,7 @@ The information provided by ATS surveillance systems and presented on a situatio
 \subsubsection{Speed control}
 
 Subject to conditions specified by the appropriate ATS authority, including consideration of aircraft performance limitations, a controller may, in order to facilitate sequencing or to reduce the need for vectoring, request aircraft to adjust their speed in a specified manner.
-%References
-\note{Procedures for speed control instructions are contained in Chapter 4, Section 4.6.}
+\note{Procedures for speed control instructions are contained in \ref{4}, \hyperref[4.6]{Section 4.6}.}
 
 \subsection[Emergencies, hazards and equipment failures]{EMERGENCIES, HAZARDS AND EQUIPMENT FAILURES}
 
@@ -628,8 +649,7 @@ Subject to conditions specified by the appropriate ATS authority, including cons
 
 \begin{enumerate}
     \item ATS surveillance systems used in the provision of approach control service shall be appropriate to the functions and level of service to be provided.
-    %References
-    \item ATS surveillance systems used to monitor parallel ILS approaches shall meet the requirements for such operations specified in Chapter 6.
+    \item ATS surveillance systems used to monitor parallel ILS approaches shall meet the requirements for such operations specified in \ref{6}.
 \end{enumerate}
 
 \subsubsection{Functions}
@@ -639,8 +659,7 @@ The position indications presented on a situation display may be used to perform
 \begin{enumalph}
     \item provide vectoring of arriving traffic on to pilot-interpreted final approach aids;
     \item provide flight path monitoring of parallel ILS approaches and instruct aircraft to take appropriate action in the event of possible or actual penetrations of the no transgression zone (NTZ);
-    %References
-    \note{See Chapter 6, Section 6.7.}
+    \note{See \ref{6}, \hyperref[6.7]{Section 6.7}.}
     \item provide vectoring of arriving traffic to a point from which a visual approach can be completed;
     \item provide vectoring of arriving traffic to a point from which a precision radar approach or a surveillance radar approach can be made;
     \item provide flight path monitoring of other pilot-interpreted approaches;
@@ -677,8 +696,7 @@ The position indications presented on a situation display may be used to perform
     \end{enumalph}
 
     \item Aircraft vectored for final approach should be given a heading or a series of headings calculated to close with the final approach track. The final vector shall enable the aircraft to be established on the final approach track prior to intercepting the specified or nominal glide path of the approach procedure from below, and should provide an intercept angle with the final approach track of 45 degrees or less.
-    %References
-    \note{See Chapter 6, Section 6.7.3.2, and Section 6.7.3.2.3 concerning vectoring and level flight requirements of independent parallel approaches, respectively.}
+    \note{See \ref{6}, \hyperref[6.7.3.2]{Section \ref{6.7.3.2}}, and \hyperref[6.7.3.2.3]{Section \ref{6.7.3.2.3}} concerning vectoring and level flight requirements of independent parallel approaches, respectively.}
     \item Whenever an aircraft is assigned a vector which will take it through the final approach track, it should be advised accordingly, stating the reason for the vector.
 \end{enumerate}
 
@@ -687,16 +705,14 @@ The position indications presented on a situation display may be used to perform
 \begin{enumerate}
     \item An aircraft vectored to intercept a pilot-interpreted final approach aid shall be instructed to report when established on the final approach track. Clearance for the approach should be issued prior to when the aircraft reports established, unless circumstances preclude the issuance of the clearance at such time. Vectoring will normally terminate at the time the aircraft leaves the last assigned heading to intercept the final approach track.
     \item When clearance for the approach is issued, aircraft shall maintain the last assigned level until intercepting the specified or nominal glide path of the approach procedure. If ATC requires an aircraft to intercept the glide path at a level other than a level flight segment depicted on the instrument approach chart, ATC shall instruct the pilot to maintain the particular level until established on the glide path.
-    %References
-    \item The controller shall be responsible for maintaining separation specified in 8.7.3 between succeeding aircraft on the same final approach, except that the responsibility may be transferred to the aerodrome controller in accordance with procedures prescribed by the appropriate ATS authority and provided an ATS surveillance system is available to the aerodrome controller.
+    \item The controller shall be responsible for maintaining separation specified in \ref{8.7.3} between succeeding aircraft on the same final approach, except that the responsibility may be transferred to the aerodrome controller in accordance with procedures prescribed by the appropriate ATS authority and provided an ATS surveillance system is available to the aerodrome controller.
     \item Transfer of control of succeeding aircraft on final approach to the aerodrome controller shall be effected in accordance with procedures prescribed by the appropriate ATS authority.
     \item Transfer of communications to the aerodrome controller should be effected at such a point or time that clearance to land or alternative instructions can be issued to the aircraft in a timely manner.
 \end{enumerate}
 
 \subsubsection{Vectoring for visual approach}
 
-%References
-\note{See also Chapter 6, Section 6.5.3.}
+\note{See also \ref{6}, \hyperref[6.5.3]{Section \ref{6.5.3}}.}
 
 \begin{enumerate}
     \item The controller may initiate vectoring of an aircraft for visual approach provided the reported ceiling is above the minimum altitude applicable to vectoring and meteorological conditions are such that, with reasonable assurance, a visual approach and landing can be completed.
@@ -724,7 +740,7 @@ The position indications presented on a situation display may be used to perform
         \item Aircraft making a radar approach should be reminded, when on final approach, to check that the wheels are down and locked.
         \item Unless otherwise prescribed by the appropriate ATS authority, the controller conducting the approach should notify the aerodrome controller or, when applicable, the procedural controller when an aircraft making a radar approach is approximately 8 NM from touchdown. If landing clearance is not received at this time, a subsequent notification should be made at approximately 4 NM from touchdown and landing clearance requested.
         \item Clearance to land or any alternative clearance received from the aerodrome controller or, when applicable, the procedural controller should normally be passed to the aircraft before it reaches a distance of 2 NM from touchdown.
-        \item An aircraft making a radar approach should:
+        \item \label{8.9.6.1.8} An aircraft making a radar approach should:
         
         \begin{enumalph}
             \item be directed to execute a missed approach in the following circumstances:
@@ -761,15 +777,14 @@ The position indications presented on a situation display may be used to perform
         \begin{enumalph}
             \item at or before the commencement of the final approach, the aircraft shall be informed of the point at which the surveillance radar approach will be terminated;
             \item the aircraft shall be informed when it is approaching the point at which it is computed that descent should begin, and just before reaching that point it shall be informed of the obstacle clearance altitude/height and instructed to descend and check the applicable minima;
-            %References
-            \item azimuth instructions shall be given in accordance with the precision approach technique (see 8.9.7.2.4);
-            \item except as provided in 8.9.7.1.4, distance from touchdown shall normally be passed at every each NM;
+
+            \item azimuth instructions shall be given in accordance with the precision approach technique (see \ref{8.9.7.2.4});
+            \item except as provided in \ref{8.9.7.1.4}, distance from touchdown shall normally be passed at every each NM;
             \item pre-computed levels through which the aircraft should be passing to maintain the glide path shall also be transmitted at every NM at the same time as the distance;
             \item the surveillance radar approach shall be terminated:
             
             \begin{enumroman}
-                %References
-                \item at a distance of 2 NM from touchdown, except as provided in 8.9.7.1.4; or
+                \item at a distance of 2 NM from touchdown, except as provided in \ref{8.9.7.1.4}; or
                 \item before the aircraft enters an area of continuous radar clutter; or
                 \item when the pilot reports that a visual approach can be effected;
             \end{enumroman}
@@ -777,7 +792,7 @@ The position indications presented on a situation display may be used to perform
             \noindent whichever is the earliest.
         \end{enumalph}
 
-        \item When, as determined by the appropriate ATS authority, the accuracy of the radar equipment permits, surveillance radar approaches may be continued to the threshold of the runway, or to a prescribed point less than 2 NM from touchdown, in which case:
+        \item \label{8.9.7.1.4} When, as determined by the appropriate ATS authority, the accuracy of the radar equipment permits, surveillance radar approaches may be continued to the threshold of the runway, or to a prescribed point less than 2 NM from touchdown, in which case:
         \begin{enumalph}
             \item distance and level information shall be given at each half NM;
             \item transmission should not be interrupted for intervals of more than five seconds while the aircraft is within a distance of 4 NM from touchdown;
@@ -799,7 +814,7 @@ The position indications presented on a situation display may be used to perform
         \item \textsc{Communications}
         \par\noindent When control of the aircraft is assumed by the controller in charge of the precision approach, a communications check shall be made on the channel to be used during the precision approach and the pilot shall be advised that no further acknowledgement of transmission is required. Thereafter, transmission should not be interrupted for intervals of more than five seconds while the aircraft is on final approach.
 
-        \item \textsc{Azimuth information and corrections}
+        \item \label{8.9.7.2.4} \textsc{Azimuth information and corrections}
         \begin{enumerate}
             \item The pilot shall be informed at regular intervals of the aircraft's position in relation to the extended centre line of the runway. Heading corrections shall be given as necessary to bring the aircraft back on to the extended centre line.
             \item In the case of azimuth deviations, the pilot should not take corrective action unless specifically instructed to do so.
@@ -822,9 +837,8 @@ The position indications presented on a situation display may be used to perform
         \item \textsc{Missed approaches}
         \par\noindent When information provided by the elevation element indicates that the aircraft may be initiating a missed approach, the controller shall take the following action:
         \begin{enumalph}
-            %References
-            \item when there is sufficient time to obtain a reply from the pilot (e.g. when the aircraft is more than 4 km (2 NM) from touchdown), the controller shall transmit the aircraft's height above the glide path and ask if the pilot intends to make a missed approach. If this is confirmed by the pilot, the controller shall pass missed approach instructions (see 8.9.6.1.8);
-            \item when there is not sufficient time to obtain a reply from the pilot (e.g. when the aircraft is at 4 km (2 NM) or less from touchdown), the precision approach should be continued, emphasizing the aircraft's displacement, and terminated at the normal termination point. If it is apparent from elevation information that the aircraft is making a missed approach, either before or after the normal termination point, the controller shall pass missed approach instructions (see 8.9.6.1.8).
+            \item when there is sufficient time to obtain a reply from the pilot (e.g. when the aircraft is more than 4 km (2 NM) from touchdown), the controller shall transmit the aircraft's height above the glide path and ask if the pilot intends to make a missed approach. If this is confirmed by the pilot, the controller shall pass missed approach instructions (see \ref{8.9.6.1.8});
+            \item when there is not sufficient time to obtain a reply from the pilot (e.g. when the aircraft is at 4 km (2 NM) or less from touchdown), the precision approach should be continued, emphasizing the aircraft's displacement, and terminated at the normal termination point. If it is apparent from elevation information that the aircraft is making a missed approach, either before or after the normal termination point, the controller shall pass missed approach instructions (see \ref{8.9.6.1.8}).
         \end{enumalph}
     \end{enumerate}
 \end{enumeratesc}
@@ -839,8 +853,7 @@ The position indications presented on a situation display may be used to perform
     \begin{enumalph}
         \item flight path monitoring of aircraft on final approach;
         \item flight path monitoring of other aircraft in the vicinity of the aerodrome;
-        %References
-        \item establishing separation specified in 8.7.3 between succeeding departing aircraft; and
+        \item establishing separation specified in \ref{8.7.3} between succeeding departing aircraft; and
         \item providing navigation assistance to VFR flights.
     \end{enumalph}
 
@@ -903,8 +916,7 @@ Annex 14, Volume I, Chapter 9. Guidance on the use of surface movement radar (SM
 The information presented on a situation display may be used to provide identified aircraft with:
 \begin{enumalph}
     \item information regarding any aircraft observed to be on a conflicting path with the identified aircraft and suggestions or advice regarding avoiding action;
-    %References
-    \item information on the position of significant weather and, as practicable, advice to the aircraft on how best to circumnavigate any such areas of adverse weather (see 8.6.9.2, Note);
+    \item information on the position of significant weather and, as practicable, advice to the aircraft on how best to circumnavigate any such areas of adverse weather (see \hyperref[8.6.9.2]{\ref{8.6.9.2}, Note});
     \item information to assist the aircraft in its navigation.
 \end{enumalph}
 
