@@ -11,6 +11,9 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tocloft}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
 
 %\usepackage{subfiles}
 
@@ -122,10 +125,11 @@
 }
 
 \newcommand{\note}[2][\empty]{%
+	\ifhmode\par\else\noindent\indent\fi%
 	\ifx#1\empty%
-		\par\textit{Note --- #2}\par%
+		\textit{Note --- #2}\par%
 	\else%
-		\par\textit{Note #1 --- #2}\par%
+		\textit{Note #1 --- #2}\par%
 	\fi%
 }
 
@@ -135,3 +139,5 @@
 \newenvironment{enumromannosep}{\begin{enumroman}[labelsep=0cm,parsep=0pt]}{\end{enumroman}}
 
 \newenvironment{noteev}{\itshape}{\normalfont}
+
+\newenvironment{tablecenter}[1]{\begin{center}\begin{tabular}{#1}}{\end{tabular}\end{center}}
