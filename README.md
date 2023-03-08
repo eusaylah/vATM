@@ -16,8 +16,9 @@ Chapter 4 contains general provisions and procedures applicable to the air traff
 Chapter 6 contains provisions and procedures applicable to departing and arriving aircraft.  
 Chapter 7 contains provisions and procedures applicable by air traffic control units providing aerodrome control service.  
 Chapter 8 contains procedures applicable by air traffic services units using radar in the performance of their functions.  
+Chapter 9 contains procedures applicable by air traffic services units providing flight information service and alerting service.  
 
-###### v0.1.4
+###### v0.1.5
 
 ## Disclaimer
 
