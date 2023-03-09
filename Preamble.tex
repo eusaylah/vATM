@@ -3,19 +3,17 @@
 % ----- Packages ----- %
 \usepackage[a4paper, portrait, margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
+\usepackage{newtx}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{comment}
 \usepackage[center]{titlesec}
-%\usepackage[skip=1cm, tocskip=1cm, indent=1cm]{parskip}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tocloft}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{makecell}
-
-%\usepackage{subfiles}
 
 
 % ----- Title ----- %
@@ -77,9 +75,7 @@
 \setlength{\cftaftertoctitleskip}{1cm}
 \setcounter{tocdepth}{2}
 \setlength{\cftparskip}{1pt}
-%\setlength{\cftsubsecindent}{0pt}
 \setlength{\cftsecnumwidth}{2.25cm}
-%\setlength{\cftbeforesubsecskip}{5cm}
 
 
 % ----- Header and footer setup ----- %
@@ -132,6 +128,9 @@
 		\textit{Note #1 --- #2}\par%
 	\fi%
 }
+
+\newcommand{\itemsc}[1]{\item {\scshape #1}}
+\newcommand{\itemscit}[1]{\item {\scshape\itshape #1}}
 
 
 % ----- Environments ----- %
