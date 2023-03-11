@@ -101,7 +101,7 @@
 }
 
 \newcommand{\checkspace}{%
-	\ifdim\dimexpr\pagegoal-\pagetotal>1.3cm%
+	\ifdim\dimexpr\pagegoal-\pagetotal>1.9cm% 1.3cm
 		1%
 	\else%
 		0%
@@ -123,9 +123,9 @@
 \newcommand{\note}[2][\empty]{%
 	\ifhmode\par\else\noindent\indent\fi%
 	\ifx#1\empty%
-		\textit{Note --- #2}\par%
+		{\itshape Note --- #2}\par%
 	\else%
-		\textit{Note #1 --- #2}\par%
+		{\itshape Note #1 --- #2}\par%
 	\fi%
 }
 
