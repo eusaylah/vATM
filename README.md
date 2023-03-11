@@ -18,7 +18,7 @@ Chapter 7 contains provisions and procedures applicable by air traffic control u
 Chapter 8 contains procedures applicable by air traffic services units using radar in the performance of their functions.  
 Chapter 9 contains procedures applicable by air traffic services units providing flight information service and alerting service.  
 
-###### v0.1.5
+###### v0.1.6
 
 ## Disclaimer
 
