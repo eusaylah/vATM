@@ -122,7 +122,8 @@ The responsibility for the control of an aircraft shall be transferred from one 
 
 \subsubsection{Flight plan form}
 
-%Numbering
+\setcounter{enumi}{3}
+
 \begin{enumerate}
     \item An operator shall, prior to departure:
     \begin{enumalph}
@@ -133,17 +134,16 @@ The responsibility for the control of an aircraft shall be transferred from one 
     \end{enumalph}
 \end{enumerate}
 
-%Numbering
-\subsubsection{Submission of a flight plan}
+\subsubsection{Submission of a flight plan} \label{4.4.2}
 
 \begin{enumeratesc}
-    \item \textsc{Prior to departure}
+    \itemsc{Prior to departure}
     \begin{enumempty}[labelindent=\parindent]
         %VATSIM
         \item \note{On VATSIM, flight plans may be submitted 2 hours before the flight.}
     \end{enumempty}
 
-    \item \textsc{During flight}
+    \itemsc{During flight}
     \begin{enumerate}
         \item A flight plan to be submitted during flight should normally be transmitted to the ATS unit in charge of the FIR, control area, advisory area or advisory route in or on which the aircraft is flying, or in or through which the aircraft wishes to fly or to the aeronautical telecommunication station serving the air traffic services unit concerned. When this is not practicable, it should be transmitted to another ATS unit or aeronautical telecommunication station for retransmission as required to the appropriate air traffic services unit.
         \item Where relevant, such as in respect of ATC units serving high- or medium-density airspace, the appropriate ATS authority should prescribe conditions and/or limitations with respect to the submission of flight plans during flight to ATC units.
@@ -181,8 +181,8 @@ The first ATS unit receiving a flight plan, or change thereto, shall:
     \item When a flight plan specifies that the first portion of a flight will be subject to ATC, and that the subsequent portion will be uncontrolled, the aircraft shall normally be cleared to the point at which the controlled flight terminates.
 \end{enumerate}
 
-%Numbering
 % 4.5.3 Flights through intermediate stops
+\stepcounter{subsubsection}
 
 \subsubsection{Contents of clearances}
 
@@ -200,14 +200,14 @@ ACCs shall, except where procedures providing for the use of standard departure 
 \subsubsection{En-route aircraft}
 
 \begin{enumeratesc}
-    \item \textsc{General}
+    \itemsc{General}
     \begin{enumerate}
         \item An ATC unit may request an adjacent ATC unit to clear aircraft to a specified point during a specified period.
         \item After the initial clearance has been issued to an aircraft at the point of departure, it will be the responsibility of the appropriate ATC unit to issue an amended clearance whenever necessary and to issue traffic information, if required.
         \item When so requested by the flight crew, an aircraft shall be cleared for cruise climb whenever traffic conditions and coordination procedures permit. Such clearance shall be for cruise climb either above a specified level or between specified levels.
     \end{enumerate}
 
-    \item \textsc{Clearances relating to supersonic flight}
+    \itemsc{Clearances relating to supersonic flight}
     \begin{enumerate}
         \item Aircraft intending supersonic flight shall, whenever practicable, be cleared for the transonic acceleration phase prior to departure.
         \item During the transonic and supersonic phases of a flight, amendments to the clearance should be kept to a minimum and must take due account of the operational limitations of the aircraft in these flight phases.
@@ -217,7 +217,7 @@ ACCs shall, except where procedures providing for the use of standard departure 
 \subsubsection{Description of air traffic control clearances}
 
 \begin{enumeratesc}
-    \item \textsc{Clearance limit}
+    \itemsc{Clearance limit}
     \begin{enumerate}
         \item A clearance limit shall be described by specifying the name of the appropriate significant point, or aerodrome, or controlled airspace boundary.
         \item When prior coordination has been effected with units under whose control the aircraft will subsequently come, or if there is reasonable assurance that it can be effected a reasonable time prior to their assumption of control, the clearance limit shall be the destination aerodrome or, if not practicable, an appropriate intermediate point, and coordination shall be expedited so that a clearance to the destination aerodrome may be issued as soon as possible.
@@ -225,7 +225,7 @@ ACCs shall, except where procedures providing for the use of standard departure 
         \item When the destination aerodrome is outside controlled airspace, the ATC unit responsible for the last controlled airspace through which an aircraft will pass shall issue the appropriate clearance for flight to the limit of that controlled airspace.
     \end{enumerate}
 
-    \item \textsc{Route of flight}
+    \itemsc{Route of flight}
     \begin{enumerate}
         \item The route of flight shall be detailed in each clearance when deemed necessary. The phrase ``cleared flight planned route" may be used to describe any route or portion thereof, provided the route or portion thereof is identical to that filed in the flight plan and sufficient routing details are given to definitely establish the aircraft on its route. The phrases ``cleared (designation) departure" or ``cleared (designation) arrival" may be used when standard departure or arrival routes have been established by the appropriate ATS authority and published in Aeronautical Information Publications (AIPs).
         %References
@@ -234,20 +234,20 @@ ACCs shall, except where procedures providing for the use of standard departure 
         \item Subject to airspace constraints, ATC workload and traffic density, and provided coordination can be effected in a timely manner, an aircraft should whenever possible be offered the most direct routing.
     \end{enumerate}
 
-    \item \textsc{Levels}
+    \itemsc{Levels}
     %References
     \begin{enumempty}
         \item Except as provided for in Chapter 6, 6.3.2 and 6.5.1.5, use of standard departure and arrival clearances, instructions included in clearances relating to levels shall consist of the items specified in Chapter 11, 11.4.2.6.2.2.
     \end{enumempty}
 
-    \item \textsc{Clearance of a requested change in flight plan}
+    \itemsc{Clearance of a requested change in flight plan}
     \begin{enumerate}
         \item When issuing a clearance covering a requested change in route or level, the exact nature of the change shall be included in the clearance.
         \item \label{4.5.7.4.2} When traffic conditions will not permit clearance of a requested change, the word ``UNABLE" shall be used. When warranted by circumstances, an alternative route or level should be offered.
         \item When an alternative route is offered and accepted by the flight crew under the procedures described in \ref{4.5.7.4.2}, the amended clearance issued shall describe the route to the point where it joins the previously cleared route, or, if the aircraft will not re-join the previous route, to the destination.
     \end{enumerate}
 
-    \item \textsc{Readback of clearances}
+    \itemsc{Readback of clearances}
     \begin{enumerate}
         \item The flight crew shall read back to the air traffic controller safety-related parts of ATC clearances and instructions which are transmitted by voice. The following items shall always be read back:
         \begin{enumalph}
@@ -300,9 +300,6 @@ ACCs shall, except where procedures providing for the use of standard departure 
     \note[1]{The true airspeed (TAS) of an aircraft will decrease during descent when maintaining a constant IAS. When two descending aircraft maintain the same IAS, and the leading aircraft is at the lower level, the TAS of the leading aircraft will be lower than that of the following aircraft. The distance between the two aircraft will thus be reduced, unless a sufficient speed differential is applied. For the purpose of calculating a desired speed differential between two succeeding aircraft, 6 kt IAS per 1 000 ft height difference may be used as a general rule. At levels below FL 80 the difference between IAS and TAS is negligible for speed control purposes.}
     \note[2]{Time and distance required to achieve a desired spacing will increase with higher levels, higher speeds, and when the aircraft is in a clean configuration.}
 \end{enumerate}
-
-%Numbering
-%4.5.3 Flights through intermediate stops
 
 \subsubsection{Descending and arriving aircraft}
 
@@ -361,7 +358,7 @@ The flight crew shall comply with published SID and STAR speed restrictions unle
 \subsection[Wake turbulence categories]{WAKE TURBULENCE CATEGORIES} \label{4.9}
 
 %References
-\note{The term ``wake turbulence" is used in this context to describe the effect of the rotating air masses generated behind the wing tips of large jet aircraft, in preference to the term ``wake vortex" which describes the nature of the air masses. Detailed characteristics of wake vortices and their effect on aircraft are contained in the \emph{Air Traffic Services Planning Manual} (Doc 9426), Part II, Section 5.}
+\note{The term ``wake turbulence" is used in this context to describe the effect of the rotating air masses generated behind the wing tips of large jet aircraft, in preference to the term ``wake vortex" which describes the nature of the air masses. Detailed characteristics of wake vortices and their effect on aircraft are contained in the \textup{Air Traffic Services Planning Manual} (Doc 9426), Part II, Section 5.}
 
 \subsubsection{Wake turbulence categories of aircraft}
 
@@ -501,12 +498,13 @@ When so prescribed by the appropriate ATS authority, the initial call to an ATC 
     \item additional elements, as required by the appropriate ATS authority.
 \end{enumalph}
 
-%Numbering
 %4.11.14
 %4.11.15
 %4.11.16
+\addtocounter{subsubsection}{3}
 
 %4.12 REPORTING OF OPERATIONAL AND METEOROLOGICAL INFORMATION
+\stepcounter{section}
 
 \subsection[Presentation and updating of flight plan and control data]{PRESENTATION AND UPDATING OF \\ FLIGHT PLAN AND CONTROL DATA}
 
@@ -543,7 +541,7 @@ ATC units shall immediately report in accordance with local instructions any fai
 
 %References
 \note[1]{Provisions concerning the data link initiation capability (DLIC) are contained in Annex 10, Volume II, Chapter 8.}
-\note[2]{Guidance material relating to the implementation of DLIC can be found in the \emph{Global Operational Data Link (GOLD) Manual} (Doc 10037).}
+\note[2]{Guidance material relating to the implementation of DLIC can be found in the \textup{Global Operational Data Link (GOLD) Manual} (Doc 10037).}
 
 \begin{enumerate}        
     \item Before entering an airspace where data link applications are used by the ATS unit, data link communications shall be initiated between the aircraft and the ATS unit in order to register the aircraft and, when necessary, allow the start of a data link application. This shall be initiated by the aircraft, either automatically or by the pilot, or by the ATS unit on address forwarding.
