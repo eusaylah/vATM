@@ -12,13 +12,14 @@ This document can be used as a reference guide for virtual air traffic controlle
 
 ### Contents
 
+Chapter 3 contains provisions and procedures applicable to air traffic flow management.  
 Chapter 4 contains general provisions and procedures applicable to the air traffic services.  
 Chapter 6 contains provisions and procedures applicable to departing and arriving aircraft.  
 Chapter 7 contains provisions and procedures applicable by air traffic control units providing aerodrome control service.  
 Chapter 8 contains procedures applicable by air traffic services units using radar in the performance of their functions.  
 Chapter 9 contains procedures applicable by air traffic services units providing flight information service and alerting service.  
 
-###### v0.1.5
+###### v0.1.6
 
 ## Disclaimer
 
