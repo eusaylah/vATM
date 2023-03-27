@@ -157,20 +157,34 @@ Separation Minimum Between FL 290 and FL 410 Inclusive} (Doc 9574).}
                 \item \textit{VOR/GNSS:} the aircraft using VOR is established on a radial to or from the VOR and the other aircraft using GNSS is confirmed to be established on a track with zero offset between two waypoints and at least one aircraft is at a minimum distance from a common point as specified in Table 5-1.
             \end{enumalph}
 
-        \begin{table}[h]
-            \centering
-            \caption{Lateral separation for aircraft flying VOR and GNSS}
-            \label{table:5-1}
-            \begin{tabular}{|c|c|c|}
-                \addlinespace[10mm]
-                \hline
-                a & b & x \\
-                a & d & d \\
-                a & d & d \\
-                \hline
-            \end{tabular}
-        \end{table}
+            %Table 5-1
+            \vspace{0.5\parsep}
+            \begin{table}[h]
+                \centering
+                \caption{Lateral separation for aircraft flying VOR and GNSS}
+                \label{table:5-1}
+                \begin{tabularx}{\textwidth}{|Sc|X|X|}
+                    \hline
+                    & \multicolumn{2}{Sc|}{\itshape \makecell{Aircraft 1: VOR or GNSS \\ Aircraft 2: GNSS}} \\
+                    \hline
+                    \makecell{Angular difference between tracks \\ measured at the common point \\ (degrees)} & \makecell{FL010 -- FL190 \\ Distance from a common point} & \makecell{FL200 -- FL600 \\ Distance from a common point} \\
+                    \hline
+                    \makecell{15 -- 135} & \makecell{15 NM} & \makecell{23 NM} \\
+                    \hline
+                    \multicolumn{3}{|Sl|}{\makecell[l]{The distances in the table are ground distances. \\ States must take into account the distance (slant range) from the source of a DME signal to the \\ receiving antenna when DME is being utilized to provide range information.}} \\
+                    \hline
+                \end{tabularx}
+            \end{table}
 
+            %References
+            \note[1]{The values in Table 5-1 are from a larger table of values derived by collision risk analysis. The source table for separation of aircraft navigating by means of GNSS and VOR is contained in Circular 322, \textup{Guidelines for the Implementation of GNSS Lateral Separation Minima based on VOR Separation Minima}. States may refer to Circular 322 for greater detail and other angular differences and separation distances.}
+            \note[2]{The values in Table 5-1 have accounted for distances from the common point encompassed by the theoretical turn area for fly-by turns as specified in the \textup{Minimum Aviation System Performance Standard: Required Navigation Performance for Air Navigation} (ED-75B/DO-236B), section 3.2.5.4, and fixed radius transition turns as defined in the \textup{Performance-based Navigation (PBN) Manual} (Doc 9613).}
+            \note[3]{Guidance material for the implementation of GNSS lateral separation is contained in Circular 322, \textup{Guidelines for the Implementation of GNSS Lateral Separation Minima Based on VOR Separation Minima}.}
+
+            %Figure 5-3 5-4 5-5
+            
         \end{enumerate}
+
+
     \end{enumerate}
 \end{enumeratesc}

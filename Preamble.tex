@@ -11,9 +11,13 @@
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{tocloft}
+\usepackage{chngcntr}
+\usepackage{tabularx}
+\usepackage{cellspace}
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{makecell}
+\usepackage{caption}
 
 
 % ----- Title ----- %
@@ -62,9 +66,17 @@
 
 
 % ----- Figure setup ----- %
-\usepackage{chngcntr}
 \counterwithin{figure}{section}
 \renewcommand\thefigure{\arabic{section}-\arabic{figure}}
+\captionsetup[figure]{font=bf}
+
+
+% ----- Table setup ----- %
+\counterwithin{table}{section}
+\renewcommand\thetable{\arabic{section}-\arabic{table}}
+\captionsetup[table]{font=bf}
+\setlength\cellspacetoplimit{2mm}
+\setlength\cellspacebottomlimit{2mm}
 
 
 % ----- Table of Contents setup ----- %
