@@ -153,4 +153,12 @@
 
 \newenvironment{noteev}{\itshape}{\normalfont}
 
-\newenvironment{tablecenter}[1]{\begin{center}\begin{tabular}{#1}}{\end{tabular}\end{center}}
+\newenvironment{tablecenter}[2][6pt]{%
+	\setlength{\tabcolsep}{#1}%
+	\begin{center}%
+	\begin{tabular}{#2}%
+}{%
+	\end{tabular}%
+	\end{center}%
+	\setlength{\tabcolsep}{6pt}%
+}

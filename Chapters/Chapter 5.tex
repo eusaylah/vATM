@@ -194,11 +194,73 @@ Separation Minimum Between FL 290 and FL 410 Inclusive} (Doc 9574).}
                 \item In order to minimize the possibility of operational errors, waypoints contained in the navigation database or uplinked to the aircraft flight management system should be used in lieu of manually entered waypoints, when applying GNSS-based track separation. In the event that it is operationally restrictive to use waypoints contained in the navigation database, the use of waypoints that require manual entry by pilots should be limited to a half or whole degree of latitude and longitude.
                 \item GNSS-based track separation shall not be applied in cases of pilot-reported receiver autonomous integrity monitoring (RAIM) outages.
                 \note{For the purpose of applying GNSS-based lateral separation minima, distance and track information derived from an integrated navigation system incorporating GNSS input is regarded as equivalent to GNSS distance and track.}
-                \item hello hello hello hello hello hello hello
+                \item GNSS receivers used for applying separation shall meet the requirements in Annex 10, Volume I, and be indicated in the flight plan.
             \end{enumerate}
             
+            \item \textit{By use of different navigation aids or methods.} Lateral separation between aircraft using different navigation aids, or when one aircraft is using RNAV equipment, shall be established by ensuring that the derived protected airspaces for the navigation aid(s) or RNP do not overlap.
+            \item \textit{Lateral separation of aircraft on published instrument flight procedures for arrivals and departures.}
+            
+            \begin{enumerate}
+                \item Lateral separation of departing and/or arriving aircraft, using instrument flight procedures, will exist:
+                \begin{enumalph}
+                    \item where the distance between any combination of RNAV 1 with RNAV 1, or RNP 1, RNP APCH or RNP AR APCH tracks is not less than 7 NM; or
+                    \item where the distance between any combination of RNP 1, RNP APCH or RNP AR APCH tracks is not less than 5 NM; or
+                    \item where the protected areas of tracks designed using obstacle clearance criteria do not overlap and provided operational error is considered.
+                \end{enumalph}
+
+                %References
+                \note[1]{Distance values contained in a) and b) above were determined by collision risk analysis using multiple navigation specifications. Information on this analysis is contained in Circular 324, \textup{Guidelines for Lateral Separation of Arriving and Departing Aircraft on Published Adjacent Instrument Flight Procedures}.}
+                \note[2]{Circular 324 also contains information on separation of arrival and departure tracks using non-overlapping protected areas based on obstacle clearance criteria, as provided for in the \textup{Procedures for Air Navigation Services -- Aircraft Operations}, Volume II -- \textup{Construction of Visual and Instrument Flight Procedures} (PANS-OPS, Doc 8168).}
+                \note[3]{Provisions concerning reductions in separation minima are contained in Chapter 2, ATS Safety Management, and Chapter 5, Separation Methods and Minima, Section 5.11.}
+                \note[4]{Guidance concerning the navigation specifications is contained in the \textup{Performance-based Navigation (PBN) Manual} (Doc 9613).}
+            \end{enumerate}
+
+            \item \textit{RNAV operations where RNP is specified on parallel tracks or ATS routes.} Within designated airspace or on designated routes, where RNP is specified, lateral separation between RNAV-equipped aircraft may be obtained by requiring aircraft to be established on the centre lines of parallel tracks or ATS routes spaced at a distance which ensures that the protected airspace of the tracks or ATS routes does not overlap.
+            \note{The spacing between parallel tracks or between parallel ATS route centre lines for which an RNP type is required will be dependent upon the relevant RNP type specified. Guidance material related to the spacing between tracks or ATS routes based on RNP type is contained in Annex 11, Attachment B.}
+
+            \item \textit{Lateral separation of aircraft on parallel or non-intersecting tracks or ATS routes.} Within designated airspace or on designated routes, lateral separation between aircraft operating on parallel or non-intersecting tracks or ATS routes shall be established in accordance with the following:
+            \begin{enumalph}
+                \item for a minimum spacing between tracks of 50 NM a navigational performance of RNAV 10 (RNP 10), RNP 4 or RNP 2 shall be prescribed;
+                \item for a minimum spacing between tracks of 23 NM a navigational performance of RNP 4 or RNP 2 shall be prescribed. The communication system shall satisfy required communication performance 240 (RCP 240) and the surveillance system shall satisfy required surveillance performance 180 (RSP 180). Conformance monitoring shall be ensured by establishing an ADS-C event contract specifying a lateral deviation change event with a maximum of 5 NM threshold and a waypoint change event;
+                \item for a minimum spacing between tracks of 15 NM a navigational performance of RNP 2 or a GNSS equipage shall be prescribed. Direct controller-pilot VHF voice communication shall be maintained while such separation is applied;
+                \item \label{5.4.1.2.1.6d} for a minimum spacing between tracks of 7 NM, applied while one aircraft climbs/descends through the level of another aircraft, a navigational performance of RNP 2 or a GNSS equipage shall be prescribed. Direct controller-pilot VHF voice communication shall be maintained while such separation is applied; and
+                \item for a minimum spacing between tracks of 20 NM, applied while one aircraft climbs/descends through the level of another aircraft whilst using other types of communication than specified in \ref{5.4.1.2.1.6d} above, a navigational performance of RNP 2 or a GNSS equipage shall be prescribed.
+            \end{enumalph}
+
+            \note[1]{Guidance material for the implementation of the navigation capability supporting 50 NM, 23 NM, 20 NM, 15 NM and 7 NM lateral separation minima is contained in the \textup{Performance-based Navigation (PBN) Manual} (Doc 9613). Guidance material for the implementation of the 50 NM, 23 NM, 20 NM, 15 NM and 7 NM lateral separation minima is contained in Circular 341, \textup{Guidelines for the Implementation of Lateral Separation Minima}.}
+            \note[2]{Guidance material for implementation of communication and surveillance capability supporting 50 NM and 23 NM lateral separation minima is contained in the \textup{Performance-based Communication and Surveillance (PBCS) Manual} (Doc 9869) and the \textup{Global Operational Data Link (GOLD) Manual} (Doc 10037).}
+            %References
+            \note[3]{See Appendix 2, ITEM 10: EQUIPMENT AND CAPABILITIES, in relation to the GNSS prescribed in c), d) and e) above.}
+
+            \item \textit{Lateral separation of aircraft on intersecting tracks or ATS routes.} Lateral separation between aircraft operating on intersecting tracks or ATS routes shall be established in accordance with the following.
+            \begin{enumalph}
+                %References
+                \item an aircraft converging with the track of another aircraft is laterally separated until it reaches a lateral separation point that is located a specified distance measured perpendicularly from the track of the other aircraft (see Figure 5-6); and
+                \item an aircraft diverging from the track of another aircraft is laterally separated after passing a lateral separation point that is located a specified distance measured perpendicularly from the track of the other aircraft (see Figure 5-6).
+            \end{enumalph}
+
+            \noindent This type of separation may be used for tracks that intersect at any angles using the values for lateral separation points specified below:
+    
+            \begin{tablecenter}[2cm]{ScSc}
+                \toprule
+                \textit{Navigation} & \textit{Separation} \\
+                \midrule
+                RNAV 10 (RNP 10) & 50 NM \\
+                RNP 4 & 23 NM \\
+                RNP 2 & 15 NM \\
+                \bottomrule
+            \end{tablecenter}
+
+            \item When applying the 15 NM separation minima specified in the table above, a GNSS, as indicated in the flight plan by the letter G meets the specified navigation performance.
+            \note{Guidance material for the implementation of the navigation capability supporting 50 NM, 23 NM, and 15 NM lateral separation minima is contained in the \textup{Performance-based Navigation (PBN) Manual} (Doc 9613). Supporting information for the implementation of the 50 NM, 23 NM and 15 NM lateral separation minima is contained in Circular 341, \textup{Guidelines for the Implementation of Lateral Separation Minima}.}
+
+            \item \textit{Transitioning into airspace where a greater lateral separation minimum applies.} Lateral separation will exist when aircraft are established on specified tracks which:
+            \begin{enumalph}
+                \item are separated by an appropriate minimum; and
+                \item diverge by at least 15 degrees until the applicable lateral separation minimum is established;
+            \end{enumalph}
+
+            \noindent providing that it is possible to ensure, by means approved by the appropriate ATS authority, that aircraft have the navigation capability necessary to ensure accurate track guidance.
         \end{enumerate}
-
-
     \end{enumerate}
 \end{enumeratesc}
