@@ -1,5 +1,3 @@
-\documentclass[oneside]{article}
-
 % ----- Packages ----- %
 \usepackage[a4paper, portrait, margin=1in]{geometry}
 \usepackage[utf8]{inputenc}
@@ -35,6 +33,7 @@
 \setlist[enumerate,1]{label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic*}
 \setlist[enumerate,2]{label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{enumi}.\arabic*}
 \setlist[enumerate,3]{label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{enumi}.\arabic{enumii}.\arabic*}
+\setlist[enumerate,4]{label=\arabic{section}.\arabic{subsection}.\arabic{subsubsection}.\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic*}
 
 \newlist{enumnoss}{enumerate}{3}
 \setlist[enumnoss]{wide,topsep=0pt,itemsep=0pt,parsep=\parskip,labelsep=0.3cm}
@@ -144,6 +143,9 @@
 \newcommand{\itemsc}[1]{\item {\scshape #1}}
 \newcommand{\itemscit}[1]{\item {\scshape\itshape #1}}
 
+\newcommand*{\version}{VersionNumber}
+\newcommand{\displayversion}{\begin{center}{\large v\version}\end{center}}
+
 
 % ----- Environments ----- %
 \newenvironment{enumeratesc}{\begin{enumerate}[itemsep=0.2cm]\centering}{\end{enumerate}}
@@ -152,8 +154,3 @@
 \newenvironment{noteev}{\itshape}{\normalfont}
 
 \newenvironment{tablecenter}[1]{\begin{center}\begin{tabular}{#1}}{\end{tabular}\end{center}}
-
-
-
-
-\newcommand{\toufarto}{Tou farto disto}
